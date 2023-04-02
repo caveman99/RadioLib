@@ -122,6 +122,10 @@ Public Types</h2></td></tr>
 , <a class="el" href="class_module.html#a5a67b3a63420d762ecba9448671c99bfa269f4bc8ba3eb3d8568feb7b2decf571">MODE_TX</a>
  }</td></tr>
 <tr class="separator:a5a67b3a63420d762ecba9448671c99bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9393088249856eab568126aeb2493e4a"><td class="memItemLeft" align="right" valign="top"><a id="a9393088249856eab568126aeb2493e4a"></a>
+typedef int16_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a9393088249856eab568126aeb2493e4a">SPIparseStatusCb_t</a>) (uint8_t in)</td></tr>
+<tr class="memdesc:a9393088249856eab568126aeb2493e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI status parsing callback typedef. <br /></td></tr>
+<tr class="separator:a9393088249856eab568126aeb2493e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -142,27 +146,45 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a45bd514a1f2859d9a867c8f9b13eb332">term</a> ()</td></tr>
 <tr class="memdesc:a45bd514a1f2859d9a867c8f9b13eb332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminate low-level module control. <br /></td></tr>
 <tr class="separator:a45bd514a1f2859d9a867c8f9b13eb332"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7ca9ae5a22cdacdf9437ca9cd37c9b4"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#ad7ca9ae5a22cdacdf9437ca9cd37c9b4">SPIgetRegValue</a> (uint8_t reg, uint8_t msb=7, uint8_t lsb=0)</td></tr>
-<tr class="memdesc:ad7ca9ae5a22cdacdf9437ca9cd37c9b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI read method that automatically masks unused bits. This method is the preferred SPI read mechanism.  <a href="class_module.html#ad7ca9ae5a22cdacdf9437ca9cd37c9b4">More...</a><br /></td></tr>
-<tr class="separator:ad7ca9ae5a22cdacdf9437ca9cd37c9b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1286d7fd9673cbfab945c26b2585a129"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a1286d7fd9673cbfab945c26b2585a129">SPIsetRegValue</a> (uint8_t reg, uint8_t value, uint8_t msb=7, uint8_t lsb=0, uint8_t checkInterval=2, uint8_t checkMask=0xFF)</td></tr>
-<tr class="memdesc:a1286d7fd9673cbfab945c26b2585a129"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrite-safe SPI write method with verification. This method is the preferred SPI write mechanism.  <a href="class_module.html#a1286d7fd9673cbfab945c26b2585a129">More...</a><br /></td></tr>
-<tr class="separator:a1286d7fd9673cbfab945c26b2585a129"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fa5239d73379e4140f5c4f513b1b8d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a6fa5239d73379e4140f5c4f513b1b8d2">SPIreadRegisterBurst</a> (uint8_t reg, uint8_t numBytes, uint8_t *inBytes)</td></tr>
-<tr class="memdesc:a6fa5239d73379e4140f5c4f513b1b8d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI burst read method.  <a href="class_module.html#a6fa5239d73379e4140f5c4f513b1b8d2">More...</a><br /></td></tr>
-<tr class="separator:a6fa5239d73379e4140f5c4f513b1b8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d1a279cc7e1ab92e30c29c4dcca26a3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a1d1a279cc7e1ab92e30c29c4dcca26a3">SPIreadRegister</a> (uint8_t reg)</td></tr>
-<tr class="memdesc:a1d1a279cc7e1ab92e30c29c4dcca26a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI basic read method. Use of this method is reserved for special cases, SPIgetRegValue should be used instead.  <a href="class_module.html#a1d1a279cc7e1ab92e30c29c4dcca26a3">More...</a><br /></td></tr>
-<tr class="separator:a1d1a279cc7e1ab92e30c29c4dcca26a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d77a08070cbd48fd4ece62a739333e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a9d77a08070cbd48fd4ece62a739333e9">SPIwriteRegisterBurst</a> (uint8_t reg, uint8_t *data, uint8_t numBytes)</td></tr>
-<tr class="memdesc:a9d77a08070cbd48fd4ece62a739333e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI burst write method.  <a href="class_module.html#a9d77a08070cbd48fd4ece62a739333e9">More...</a><br /></td></tr>
-<tr class="separator:a9d77a08070cbd48fd4ece62a739333e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab814614ddd34b57f5a612a20f5fe4c57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#ab814614ddd34b57f5a612a20f5fe4c57">SPIwriteRegister</a> (uint8_t reg, uint8_t data)</td></tr>
-<tr class="memdesc:ab814614ddd34b57f5a612a20f5fe4c57"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI basic write method. Use of this method is reserved for special cases, SPIsetRegValue should be used instead.  <a href="class_module.html#ab814614ddd34b57f5a612a20f5fe4c57">More...</a><br /></td></tr>
-<tr class="separator:ab814614ddd34b57f5a612a20f5fe4c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefd955f1cd6d588b2cc229db87cb2121"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#aefd955f1cd6d588b2cc229db87cb2121">SPItransfer</a> (uint8_t cmd, uint8_t reg, uint8_t *dataOut, uint8_t *dataIn, uint8_t numBytes)</td></tr>
-<tr class="memdesc:aefd955f1cd6d588b2cc229db87cb2121"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI single transfer method.  <a href="class_module.html#aefd955f1cd6d588b2cc229db87cb2121">More...</a><br /></td></tr>
-<tr class="separator:aefd955f1cd6d588b2cc229db87cb2121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e15988ec448c76142ee5709929be2c"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a01e15988ec448c76142ee5709929be2c">SPIgetRegValue</a> (uint16_t reg, uint8_t msb=7, uint8_t lsb=0)</td></tr>
+<tr class="memdesc:a01e15988ec448c76142ee5709929be2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI read method that automatically masks unused bits. This method is the preferred SPI read mechanism.  <a href="class_module.html#a01e15988ec448c76142ee5709929be2c">More...</a><br /></td></tr>
+<tr class="separator:a01e15988ec448c76142ee5709929be2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081191402ad5c49e6c21982fc4587b77"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a081191402ad5c49e6c21982fc4587b77">SPIsetRegValue</a> (uint16_t reg, uint8_t value, uint8_t msb=7, uint8_t lsb=0, uint8_t checkInterval=2, uint8_t checkMask=0xFF)</td></tr>
+<tr class="memdesc:a081191402ad5c49e6c21982fc4587b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrite-safe SPI write method with verification. This method is the preferred SPI write mechanism.  <a href="class_module.html#a081191402ad5c49e6c21982fc4587b77">More...</a><br /></td></tr>
+<tr class="separator:a081191402ad5c49e6c21982fc4587b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a874e030f1931e606e380930d37dd83ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a874e030f1931e606e380930d37dd83ee">SPIreadRegisterBurst</a> (uint16_t reg, size_t numBytes, uint8_t *inBytes)</td></tr>
+<tr class="memdesc:a874e030f1931e606e380930d37dd83ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI burst read method.  <a href="class_module.html#a874e030f1931e606e380930d37dd83ee">More...</a><br /></td></tr>
+<tr class="separator:a874e030f1931e606e380930d37dd83ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a545e4a001da0d9f6358279ac40d4f0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a9a545e4a001da0d9f6358279ac40d4f0">SPIreadRegister</a> (uint16_t reg)</td></tr>
+<tr class="memdesc:a9a545e4a001da0d9f6358279ac40d4f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI basic read method. Use of this method is reserved for special cases, SPIgetRegValue should be used instead.  <a href="class_module.html#a9a545e4a001da0d9f6358279ac40d4f0">More...</a><br /></td></tr>
+<tr class="separator:a9a545e4a001da0d9f6358279ac40d4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af474f82d00fffc1ee0fc8def2c7f220c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#af474f82d00fffc1ee0fc8def2c7f220c">SPIwriteRegisterBurst</a> (uint16_t reg, uint8_t *data, size_t numBytes)</td></tr>
+<tr class="memdesc:af474f82d00fffc1ee0fc8def2c7f220c"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI burst write method.  <a href="class_module.html#af474f82d00fffc1ee0fc8def2c7f220c">More...</a><br /></td></tr>
+<tr class="separator:af474f82d00fffc1ee0fc8def2c7f220c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4437af6552e258e95ed8ed452afa6dd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a4437af6552e258e95ed8ed452afa6dd4">SPIwriteRegister</a> (uint16_t reg, uint8_t data)</td></tr>
+<tr class="memdesc:a4437af6552e258e95ed8ed452afa6dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI basic write method. Use of this method is reserved for special cases, SPIsetRegValue should be used instead.  <a href="class_module.html#a4437af6552e258e95ed8ed452afa6dd4">More...</a><br /></td></tr>
+<tr class="separator:a4437af6552e258e95ed8ed452afa6dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78dd39aa71d97e2220a880df8162fdde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a78dd39aa71d97e2220a880df8162fdde">SPItransfer</a> (uint8_t cmd, uint16_t reg, uint8_t *dataOut, uint8_t *dataIn, size_t numBytes)</td></tr>
+<tr class="memdesc:a78dd39aa71d97e2220a880df8162fdde"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI single transfer method.  <a href="class_module.html#a78dd39aa71d97e2220a880df8162fdde">More...</a><br /></td></tr>
+<tr class="separator:a78dd39aa71d97e2220a880df8162fdde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5efa7ae78cab1d7f43005e965923f769"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a5efa7ae78cab1d7f43005e965923f769">SPIcheckStream</a> ()</td></tr>
+<tr class="memdesc:a5efa7ae78cab1d7f43005e965923f769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to check the result of last SPI stream transfer.  <a href="class_module.html#a5efa7ae78cab1d7f43005e965923f769">More...</a><br /></td></tr>
+<tr class="separator:a5efa7ae78cab1d7f43005e965923f769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9fc874adc8dbe7c3f1fd3c267c27708"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#ab9fc874adc8dbe7c3f1fd3c267c27708">SPIreadStream</a> (uint8_t cmd, uint8_t *data, size_t numBytes, bool waitForGpio=true, bool verify=true)</td></tr>
+<tr class="memdesc:ab9fc874adc8dbe7c3f1fd3c267c27708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to perform a read transaction with SPI stream.  <a href="class_module.html#ab9fc874adc8dbe7c3f1fd3c267c27708">More...</a><br /></td></tr>
+<tr class="separator:ab9fc874adc8dbe7c3f1fd3c267c27708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a085415b49ff72238f118b937ad896cbd"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a085415b49ff72238f118b937ad896cbd">SPIreadStream</a> (uint8_t *cmd, uint8_t cmdLen, uint8_t *data, size_t numBytes, bool waitForGpio=true, bool verify=true)</td></tr>
+<tr class="memdesc:a085415b49ff72238f118b937ad896cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to perform a read transaction with SPI stream.  <a href="class_module.html#a085415b49ff72238f118b937ad896cbd">More...</a><br /></td></tr>
+<tr class="separator:a085415b49ff72238f118b937ad896cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ce586afa403130007a474d3295d762"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a74ce586afa403130007a474d3295d762">SPIwriteStream</a> (uint8_t cmd, uint8_t *data, size_t numBytes, bool waitForGpio=true, bool verify=true)</td></tr>
+<tr class="memdesc:a74ce586afa403130007a474d3295d762"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to perform a write transaction with SPI stream.  <a href="class_module.html#a74ce586afa403130007a474d3295d762">More...</a><br /></td></tr>
+<tr class="separator:a74ce586afa403130007a474d3295d762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7acbe601ebe6398781d0f2de5177305e"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a7acbe601ebe6398781d0f2de5177305e">SPIwriteStream</a> (uint8_t *cmd, uint8_t cmdLen, uint8_t *data, size_t numBytes, bool waitForGpio=true, bool verify=true)</td></tr>
+<tr class="memdesc:a7acbe601ebe6398781d0f2de5177305e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to perform a write transaction with SPI stream.  <a href="class_module.html#a7acbe601ebe6398781d0f2de5177305e">More...</a><br /></td></tr>
+<tr class="separator:a7acbe601ebe6398781d0f2de5177305e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3586c8d4013cbdd22cf34032632c181"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#ac3586c8d4013cbdd22cf34032632c181">SPItransferStream</a> (uint8_t *cmd, uint8_t cmdLen, bool write, uint8_t *dataOut, uint8_t *dataIn, size_t numBytes, bool waitForGpio, uint32_t timeout)</td></tr>
+<tr class="memdesc:ac3586c8d4013cbdd22cf34032632c181"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI single transfer method for modules with stream-type SPI interface (<a class="el" href="class_s_x126x.html" title="Base class for SX126x series. All derived classes for SX126x (e.g. SX1262 or SX1268) inherit from thi...">SX126x</a>, <a class="el" href="class_s_x128x.html" title="Base class for SX128x series. All derived classes for SX128x (e.g. SX1280 or SX1281) inherit from thi...">SX128x</a> etc.).  <a href="class_module.html#ac3586c8d4013cbdd22cf34032632c181">More...</a><br /></td></tr>
+<tr class="separator:ac3586c8d4013cbdd22cf34032632c181"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae53e355a77f2b7ce6473c62ac5f37334"><td class="memItemLeft" align="right" valign="top">RADIOLIB_PIN_TYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#ae53e355a77f2b7ce6473c62ac5f37334">getCs</a> () const</td></tr>
 <tr class="memdesc:ae53e355a77f2b7ce6473c62ac5f37334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access method to get the pin number of SPI chip select.  <a href="class_module.html#ae53e355a77f2b7ce6473c62ac5f37334">More...</a><br /></td></tr>
 <tr class="separator:ae53e355a77f2b7ce6473c62ac5f37334"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -262,9 +284,9 @@ virtual uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>SPItransfe
 <tr class="memitem:acabb23f1cded0a43ffc38cfcc649dcb2"><td class="memItemLeft" align="right" valign="top"><a id="acabb23f1cded0a43ffc38cfcc649dcb2"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SPIendTransaction</b> ()</td></tr>
 <tr class="separator:acabb23f1cded0a43ffc38cfcc649dcb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7216d32fc55130d111409c6f2050d9c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a7216d32fc55130d111409c6f2050d9c0">regdump</a> (uint8_t start, uint8_t len)</td></tr>
-<tr class="memdesc:a7216d32fc55130d111409c6f2050d9c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to dump device registers as hex into the debug port.  <a href="class_module.html#a7216d32fc55130d111409c6f2050d9c0">More...</a><br /></td></tr>
-<tr class="separator:a7216d32fc55130d111409c6f2050d9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb13a50ed53b009c04dc2ed6caf78423"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#abb13a50ed53b009c04dc2ed6caf78423">regdump</a> (uint16_t start, size_t len)</td></tr>
+<tr class="memdesc:abb13a50ed53b009c04dc2ed6caf78423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to dump device registers as hex into the debug port.  <a href="class_module.html#abb13a50ed53b009c04dc2ed6caf78423">More...</a><br /></td></tr>
+<tr class="separator:abb13a50ed53b009c04dc2ed6caf78423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -276,9 +298,9 @@ static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a160006371be8e121a8a54cc4462b3a72">flipBits16</a> (uint16_t i)</td></tr>
 <tr class="memdesc:a160006371be8e121a8a54cc4462b3a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to reflect bits within an integer. <br /></td></tr>
 <tr class="separator:a160006371be8e121a8a54cc4462b3a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2dc188128f32f9360a178f31659291a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#ac2dc188128f32f9360a178f31659291a">hexdump</a> (uint8_t *data, size_t len)</td></tr>
-<tr class="memdesc:ac2dc188128f32f9360a178f31659291a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to dump data as hex into the debug port.  <a href="class_module.html#ac2dc188128f32f9360a178f31659291a">More...</a><br /></td></tr>
-<tr class="separator:ac2dc188128f32f9360a178f31659291a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0532274dafe433ba68529945bfe6a1b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#ad0532274dafe433ba68529945bfe6a1b">hexdump</a> (uint8_t *data, size_t len, uint32_t offset=0, uint8_t width=1, bool be=false)</td></tr>
+<tr class="memdesc:ad0532274dafe433ba68529945bfe6a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to dump data as hex into the debug port.  <a href="class_module.html#ad0532274dafe433ba68529945bfe6a1b">More...</a><br /></td></tr>
+<tr class="separator:ad0532274dafe433ba68529945bfe6a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -290,14 +312,36 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#ae89764d15e8df5694a6aec0e18f72d3f">SPIwriteCommand</a> = 0b10000000</td></tr>
 <tr class="memdesc:ae89764d15e8df5694a6aec0e18f72d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic SPI write command. Defaults to 0x80. <br /></td></tr>
 <tr class="separator:ae89764d15e8df5694a6aec0e18f72d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a466112286d19675ca2dbe481358e4365"><td class="memItemLeft" align="right" valign="top"><a id="a466112286d19675ca2dbe481358e4365"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a466112286d19675ca2dbe481358e4365">SPInopCommand</a> = 0x00</td></tr>
+<tr class="memdesc:a466112286d19675ca2dbe481358e4365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic SPI no-operation command. Defaults to 0x00. <br /></td></tr>
+<tr class="separator:a466112286d19675ca2dbe481358e4365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06d8d4257c584b57a529fcc405d87c79"><td class="memItemLeft" align="right" valign="top"><a id="a06d8d4257c584b57a529fcc405d87c79"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a06d8d4257c584b57a529fcc405d87c79">SPIstatusCommand</a> = 0x00</td></tr>
+<tr class="memdesc:a06d8d4257c584b57a529fcc405d87c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic SPI status read command. Defaults to 0x00. <br /></td></tr>
+<tr class="separator:a06d8d4257c584b57a529fcc405d87c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac19a495026aae62f5c2f089aa1b2b57a"><td class="memItemLeft" align="right" valign="top"><a id="ac19a495026aae62f5c2f089aa1b2b57a"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#ac19a495026aae62f5c2f089aa1b2b57a">SPIaddrWidth</a> = 8</td></tr>
+<tr class="memdesc:ac19a495026aae62f5c2f089aa1b2b57a"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI address width. Defaults to 8, currently only supports 8 and 16-bit addresses. <br /></td></tr>
+<tr class="separator:ac19a495026aae62f5c2f089aa1b2b57a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34927454be3a34df8a5a586c46c428af"><td class="memItemLeft" align="right" valign="top"><a id="a34927454be3a34df8a5a586c46c428af"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a34927454be3a34df8a5a586c46c428af">SPIstreamType</a> = false</td></tr>
+<tr class="memdesc:a34927454be3a34df8a5a586c46c428af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the SPI interface is stream-type (e.g. <a class="el" href="class_s_x126x.html" title="Base class for SX126x series. All derived classes for SX126x (e.g. SX1262 or SX1268) inherit from thi...">SX126x</a>) or register-type (e.g. <a class="el" href="class_s_x127x.html" title="Base class for SX127x series. All derived classes for SX127x (e.g. SX1278 or SX1272) inherit from thi...">SX127x</a>). Defaults to register-type SPI interfaces. <br /></td></tr>
+<tr class="separator:a34927454be3a34df8a5a586c46c428af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66b06e69d57b97116bed1c6f185381f1"><td class="memItemLeft" align="right" valign="top"><a id="a66b06e69d57b97116bed1c6f185381f1"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a66b06e69d57b97116bed1c6f185381f1">SPIstreamError</a> = <a class="el" href="group__status__codes.html#gacc0baeb3e5fc99760a07d18ba55531b6">RADIOLIB_ERR_UNKNOWN</a></td></tr>
+<tr class="memdesc:a66b06e69d57b97116bed1c6f185381f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last recorded SPI stream error. <br /></td></tr>
+<tr class="separator:a66b06e69d57b97116bed1c6f185381f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6e89e2bc4976e8c5dc42dedda9fa6a2"><td class="memItemLeft" align="right" valign="top"><a id="af6e89e2bc4976e8c5dc42dedda9fa6a2"></a>
+<a class="el" href="class_module.html#a9393088249856eab568126aeb2493e4a">SPIparseStatusCb_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#af6e89e2bc4976e8c5dc42dedda9fa6a2">SPIparseStatusCb</a> = nullptr</td></tr>
+<tr class="memdesc:af6e89e2bc4976e8c5dc42dedda9fa6a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to function that will parse the module-specific status codes to RadioLib status codes. Typically used for modules with SPI stream-type interface (e.g. SX126x/SX128x). <br /></td></tr>
+<tr class="separator:af6e89e2bc4976e8c5dc42dedda9fa6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a0c11551e12579bbabf57b19e12555b3c"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a0c11551e12579bbabf57b19e12555b3c">RFSWITCH_MAX_PINS</a> = 3</td></tr>
 <tr class="memdesc:a0c11551e12579bbabf57b19e12555b3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of pins supported by the RF switch code.  <a href="class_module.html#a0c11551e12579bbabf57b19e12555b3c">More...</a><br /></td></tr>
 <tr class="separator:a0c11551e12579bbabf57b19e12555b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4819e8b5e1fba0c99aa11477296e0927"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="struct_module_1_1_rf_switch_mode__t.html">RfSwitchMode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_module.html#a4819e8b5e1fba0c99aa11477296e0927">END_OF_MODE_TABLE</a> = {<a class="el" href="class_module.html#a5a67b3a63420d762ecba9448671c99bfa81cdd8986054c2ae5657eb5dfd536770">MODE_END_OF_TABLE</a>, {}}</td></tr>
-<tr class="separator:a4819e8b5e1fba0c99aa11477296e0927"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implements all common low-level methods to control the wireless module. Every module class contains one private instance of this class. </p>
@@ -316,7 +360,7 @@ Static Public Attributes</h2></td></tr>
 <p>Constants to use in a mode table set be setRfSwitchTable. These constants work for most radios, but some radios define their own constants to be used instead.</p>
 <p>See <a class="el" href="class_module.html#a870c63233146d03380f753498c975050" title="Some modules contain external RF switch controlled by pins. This function gives RadioLib control over...">setRfSwitchTable()</a> for details. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5a67b3a63420d762ecba9448671c99bfa81cdd8986054c2ae5657eb5dfd536770"></a>MODE_END_OF_TABLE&#160;</td><td class="fielddoc"><p>End of table marker, use <a class="el" href="class_module.html#a4819e8b5e1fba0c99aa11477296e0927">END_OF_MODE_TABLE</a> constant instead. Value is zero to ensure zero-initialized mode ends the table </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5a67b3a63420d762ecba9448671c99bfa81cdd8986054c2ae5657eb5dfd536770"></a>MODE_END_OF_TABLE&#160;</td><td class="fielddoc"><p>End of table marker, use END_OF_MODE_TABLE constant instead. Value is zero to ensure zero-initialized mode ends the table </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a5a67b3a63420d762ecba9448671c99bfa505acc66c5e0faa83d2216aca5f3e671"></a>MODE_IDLE&#160;</td><td class="fielddoc"><p>Idle mode </p>
 </td></tr>
@@ -732,8 +776,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ac2dc188128f32f9360a178f31659291a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2dc188128f32f9360a178f31659291a">&#9670;&nbsp;</a></span>hexdump()</h2>
+<a id="ad0532274dafe433ba68529945bfe6a1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0532274dafe433ba68529945bfe6a1b">&#9670;&nbsp;</a></span>hexdump()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -751,7 +795,25 @@ Static Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>offset</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>width</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>be</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -770,7 +832,9 @@ Static Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Data to dump.</td></tr>
-    <tr><td class="paramname">len</td><td>Number of bytes to dump. </td></tr>
+    <tr><td class="paramname">len</td><td>Number of bytes to dump.</td></tr>
+    <tr><td class="paramname">width</td><td>Word width (1 for uint8_t, 2 for uint16_t, 4 for uint32_t).</td></tr>
+    <tr><td class="paramname">be</td><td>Print multi-byte data as big endian. Defaults to false. </td></tr>
   </table>
   </dd>
 </dl>
@@ -866,8 +930,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7216d32fc55130d111409c6f2050d9c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7216d32fc55130d111409c6f2050d9c0">&#9670;&nbsp;</a></span>regdump()</h2>
+<a id="abb13a50ed53b009c04dc2ed6caf78423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb13a50ed53b009c04dc2ed6caf78423">&#9670;&nbsp;</a></span>regdump()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -875,13 +939,13 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void Module::regdump </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>start</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -1016,7 +1080,7 @@ Static Public Attributes</h2></td></tr>
 <div class="line">  {<a class="code" href="class_module.html#a5a67b3a63420d762ecba9448671c99bfa505acc66c5e0faa83d2216aca5f3e671">Module::MODE_IDLE</a>,  {LOW,  LOW}},</div>
 <div class="line">  {<a class="code" href="class_module.html#a5a67b3a63420d762ecba9448671c99bfa7664838bb0818663f55b3354fec8a18f">Module::MODE_RX</a>,    {HIGH, LOW}},</div>
 <div class="line">  {<a class="code" href="class_module.html#a5a67b3a63420d762ecba9448671c99bfa269f4bc8ba3eb3d8568feb7b2decf571">Module::MODE_TX</a>,    {HIGH, HIGH}},</div>
-<div class="line">   <a class="code" href="class_module.html#a4819e8b5e1fba0c99aa11477296e0927">Module::END_OF_MODE_TABLE</a>,</div>
+<div class="line">   Module::END_OF_MODE_TABLE,</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> setup() {</div>
@@ -1025,16 +1089,35 @@ Static Public Attributes</h2></td></tr>
 <div class="line">  radio.setRfSwitchTable(rfswitch_pins, rfswitch_table);</div>
 <div class="line">  ...</div>
 <div class="line">}</div>
-<div class="ttc" id="aclass_module_html_a4819e8b5e1fba0c99aa11477296e0927"><div class="ttname"><a href="class_module.html#a4819e8b5e1fba0c99aa11477296e0927">Module::END_OF_MODE_TABLE</a></div><div class="ttdeci">static constexpr RfSwitchMode_t END_OF_MODE_TABLE</div><div class="ttdef"><b>Definition:</b> Module.h:65</div></div>
-<div class="ttc" id="aclass_module_html_a5a67b3a63420d762ecba9448671c99bfa269f4bc8ba3eb3d8568feb7b2decf571"><div class="ttname"><a href="class_module.html#a5a67b3a63420d762ecba9448671c99bfa269f4bc8ba3eb3d8568feb7b2decf571">Module::MODE_TX</a></div><div class="ttdeci">@ MODE_TX</div><div class="ttdef"><b>Definition:</b> Module.h:56</div></div>
-<div class="ttc" id="aclass_module_html_a5a67b3a63420d762ecba9448671c99bfa505acc66c5e0faa83d2216aca5f3e671"><div class="ttname"><a href="class_module.html#a5a67b3a63420d762ecba9448671c99bfa505acc66c5e0faa83d2216aca5f3e671">Module::MODE_IDLE</a></div><div class="ttdeci">@ MODE_IDLE</div><div class="ttdef"><b>Definition:</b> Module.h:52</div></div>
-<div class="ttc" id="aclass_module_html_a5a67b3a63420d762ecba9448671c99bfa7664838bb0818663f55b3354fec8a18f"><div class="ttname"><a href="class_module.html#a5a67b3a63420d762ecba9448671c99bfa7664838bb0818663f55b3354fec8a18f">Module::MODE_RX</a></div><div class="ttdeci">@ MODE_RX</div><div class="ttdef"><b>Definition:</b> Module.h:54</div></div>
-<div class="ttc" id="astruct_module_1_1_rf_switch_mode__t_html"><div class="ttname"><a href="struct_module_1_1_rf_switch_mode__t.html">Module::RfSwitchMode_t</a></div><div class="ttdef"><b>Definition:</b> Module.h:34</div></div>
+<div class="ttc" id="aclass_module_html_a5a67b3a63420d762ecba9448671c99bfa269f4bc8ba3eb3d8568feb7b2decf571"><div class="ttname"><a href="class_module.html#a5a67b3a63420d762ecba9448671c99bfa269f4bc8ba3eb3d8568feb7b2decf571">Module::MODE_TX</a></div><div class="ttdeci">@ MODE_TX</div><div class="ttdef"><b>Definition:</b> Module.h:64</div></div>
+<div class="ttc" id="aclass_module_html_a5a67b3a63420d762ecba9448671c99bfa505acc66c5e0faa83d2216aca5f3e671"><div class="ttname"><a href="class_module.html#a5a67b3a63420d762ecba9448671c99bfa505acc66c5e0faa83d2216aca5f3e671">Module::MODE_IDLE</a></div><div class="ttdeci">@ MODE_IDLE</div><div class="ttdef"><b>Definition:</b> Module.h:60</div></div>
+<div class="ttc" id="aclass_module_html_a5a67b3a63420d762ecba9448671c99bfa7664838bb0818663f55b3354fec8a18f"><div class="ttname"><a href="class_module.html#a5a67b3a63420d762ecba9448671c99bfa7664838bb0818663f55b3354fec8a18f">Module::MODE_RX</a></div><div class="ttdeci">@ MODE_RX</div><div class="ttdef"><b>Definition:</b> Module.h:62</div></div>
+<div class="ttc" id="astruct_module_1_1_rf_switch_mode__t_html"><div class="ttname"><a href="struct_module_1_1_rf_switch_mode__t.html">Module::RfSwitchMode_t</a></div><div class="ttdef"><b>Definition:</b> Module.h:42</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
-<a id="ad7ca9ae5a22cdacdf9437ca9cd37c9b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7ca9ae5a22cdacdf9437ca9cd37c9b4">&#9670;&nbsp;</a></span>SPIgetRegValue()</h2>
+<a id="a5efa7ae78cab1d7f43005e965923f769"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5efa7ae78cab1d7f43005e965923f769">&#9670;&nbsp;</a></span>SPIcheckStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t Module::SPIcheckStream </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method to check the result of last SPI stream transfer. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a01e15988ec448c76142ee5709929be2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01e15988ec448c76142ee5709929be2c">&#9670;&nbsp;</a></span>SPIgetRegValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1042,7 +1125,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">int16_t Module::SPIgetRegValue </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>reg</em>, </td>
         </tr>
         <tr>
@@ -1078,8 +1161,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a1d1a279cc7e1ab92e30c29c4dcca26a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d1a279cc7e1ab92e30c29c4dcca26a3">&#9670;&nbsp;</a></span>SPIreadRegister()</h2>
+<a id="a9a545e4a001da0d9f6358279ac40d4f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a545e4a001da0d9f6358279ac40d4f0">&#9670;&nbsp;</a></span>SPIreadRegister()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1087,7 +1170,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">uint8_t Module::SPIreadRegister </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>reg</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1105,8 +1188,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a6fa5239d73379e4140f5c4f513b1b8d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fa5239d73379e4140f5c4f513b1b8d2">&#9670;&nbsp;</a></span>SPIreadRegisterBurst()</h2>
+<a id="a874e030f1931e606e380930d37dd83ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a874e030f1931e606e380930d37dd83ee">&#9670;&nbsp;</a></span>SPIreadRegisterBurst()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1114,13 +1197,13 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void Module::SPIreadRegisterBurst </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>reg</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>numBytes</em>, </td>
         </tr>
         <tr>
@@ -1149,8 +1232,133 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a1286d7fd9673cbfab945c26b2585a129"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1286d7fd9673cbfab945c26b2585a129">&#9670;&nbsp;</a></span>SPIsetRegValue()</h2>
+<a id="a085415b49ff72238f118b937ad896cbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a085415b49ff72238f118b937ad896cbd">&#9670;&nbsp;</a></span>SPIreadStream() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t Module::SPIreadStream </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cmdLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numBytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>waitForGpio</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>verify</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method to perform a read transaction with SPI stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>SPI operation command.</td></tr>
+    <tr><td class="paramname">cmdLen</td><td>SPI command length in bytes.</td></tr>
+    <tr><td class="paramname">data</td><td>Data that will be transferred from slave to master.</td></tr>
+    <tr><td class="paramname">numBytes</td><td>Number of bytes to transfer.</td></tr>
+    <tr><td class="paramname">waitForGpio</td><td>Whether to wait for some GPIO at the end of transfer (e.g. BUSY line on SX126x/SX128x).</td></tr>
+    <tr><td class="paramname">verify</td><td>Whether to verify the result of the transaction after it is finished.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab9fc874adc8dbe7c3f1fd3c267c27708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9fc874adc8dbe7c3f1fd3c267c27708">&#9670;&nbsp;</a></span>SPIreadStream() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t Module::SPIreadStream </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numBytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>waitForGpio</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>verify</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method to perform a read transaction with SPI stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>SPI operation command.</td></tr>
+    <tr><td class="paramname">data</td><td>Data that will be transferred from slave to master.</td></tr>
+    <tr><td class="paramname">numBytes</td><td>Number of bytes to transfer.</td></tr>
+    <tr><td class="paramname">waitForGpio</td><td>Whether to wait for some GPIO at the end of transfer (e.g. BUSY line on SX126x/SX128x).</td></tr>
+    <tr><td class="paramname">verify</td><td>Whether to verify the result of the transaction after it is finished.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a081191402ad5c49e6c21982fc4587b77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a081191402ad5c49e6c21982fc4587b77">&#9670;&nbsp;</a></span>SPIsetRegValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1158,7 +1366,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">int16_t Module::SPIsetRegValue </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>reg</em>, </td>
         </tr>
         <tr>
@@ -1215,8 +1423,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aefd955f1cd6d588b2cc229db87cb2121"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefd955f1cd6d588b2cc229db87cb2121">&#9670;&nbsp;</a></span>SPItransfer()</h2>
+<a id="a78dd39aa71d97e2220a880df8162fdde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78dd39aa71d97e2220a880df8162fdde">&#9670;&nbsp;</a></span>SPItransfer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1230,7 +1438,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>reg</em>, </td>
         </tr>
         <tr>
@@ -1248,7 +1456,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>numBytes</em>&#160;</td>
         </tr>
         <tr>
@@ -1273,8 +1481,88 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab814614ddd34b57f5a612a20f5fe4c57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab814614ddd34b57f5a612a20f5fe4c57">&#9670;&nbsp;</a></span>SPIwriteRegister()</h2>
+<a id="ac3586c8d4013cbdd22cf34032632c181"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3586c8d4013cbdd22cf34032632c181">&#9670;&nbsp;</a></span>SPItransferStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t Module::SPItransferStream </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cmdLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>write</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>dataOut</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>dataIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numBytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>waitForGpio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SPI single transfer method for modules with stream-type SPI interface (<a class="el" href="class_s_x126x.html" title="Base class for SX126x series. All derived classes for SX126x (e.g. SX1262 or SX1268) inherit from thi...">SX126x</a>, <a class="el" href="class_s_x128x.html" title="Base class for SX128x series. All derived classes for SX128x (e.g. SX1280 or SX1281) inherit from thi...">SX128x</a> etc.). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>SPI operation command.</td></tr>
+    <tr><td class="paramname">cmdLen</td><td>SPI command length in bytes.</td></tr>
+    <tr><td class="paramname">write</td><td>Set to true for write commands, false for read commands.</td></tr>
+    <tr><td class="paramname">dataOut</td><td>Data that will be transfered from master to slave.</td></tr>
+    <tr><td class="paramname">dataIn</td><td>Data that was transfered from slave to master.</td></tr>
+    <tr><td class="paramname">numBytes</td><td>Number of bytes to transfer.</td></tr>
+    <tr><td class="paramname">waitForGpio</td><td>Whether to wait for some GPIO at the end of transfer (e.g. BUSY line on SX126x/SX128x).</td></tr>
+    <tr><td class="paramname">timeout</td><td>GPIO wait period timeout in milliseconds.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4437af6552e258e95ed8ed452afa6dd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4437af6552e258e95ed8ed452afa6dd4">&#9670;&nbsp;</a></span>SPIwriteRegister()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1282,7 +1570,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void Module::SPIwriteRegister </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>reg</em>, </td>
         </tr>
         <tr>
@@ -1310,8 +1598,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9d77a08070cbd48fd4ece62a739333e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d77a08070cbd48fd4ece62a739333e9">&#9670;&nbsp;</a></span>SPIwriteRegisterBurst()</h2>
+<a id="af474f82d00fffc1ee0fc8def2c7f220c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af474f82d00fffc1ee0fc8def2c7f220c">&#9670;&nbsp;</a></span>SPIwriteRegisterBurst()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1319,7 +1607,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void Module::SPIwriteRegisterBurst </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>reg</em>, </td>
         </tr>
         <tr>
@@ -1331,7 +1619,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>numBytes</em>&#160;</td>
         </tr>
         <tr>
@@ -1351,6 +1639,131 @@ Static Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a7acbe601ebe6398781d0f2de5177305e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7acbe601ebe6398781d0f2de5177305e">&#9670;&nbsp;</a></span>SPIwriteStream() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t Module::SPIwriteStream </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cmdLen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numBytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>waitForGpio</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>verify</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method to perform a write transaction with SPI stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>SPI operation command.</td></tr>
+    <tr><td class="paramname">cmdLen</td><td>SPI command length in bytes.</td></tr>
+    <tr><td class="paramname">data</td><td>Data that will be transferred from master to slave.</td></tr>
+    <tr><td class="paramname">numBytes</td><td>Number of bytes to transfer.</td></tr>
+    <tr><td class="paramname">waitForGpio</td><td>Whether to wait for some GPIO at the end of transfer (e.g. BUSY line on SX126x/SX128x).</td></tr>
+    <tr><td class="paramname">verify</td><td>Whether to verify the result of the transaction after it is finished.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a74ce586afa403130007a474d3295d762"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74ce586afa403130007a474d3295d762">&#9670;&nbsp;</a></span>SPIwriteStream() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t Module::SPIwriteStream </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>numBytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>waitForGpio</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>verify</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method to perform a write transaction with SPI stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>SPI operation command.</td></tr>
+    <tr><td class="paramname">data</td><td>Data that will be transferred from master to slave.</td></tr>
+    <tr><td class="paramname">numBytes</td><td>Number of bytes to transfer.</td></tr>
+    <tr><td class="paramname">waitForGpio</td><td>Whether to wait for some GPIO at the end of transfer (e.g. BUSY line on SX126x/SX128x).</td></tr>
+    <tr><td class="paramname">verify</td><td>Whether to verify the result of the transaction after it is finished.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
 
 </div>
 </div>
@@ -1435,30 +1848,6 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a4819e8b5e1fba0c99aa11477296e0927"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4819e8b5e1fba0c99aa11477296e0927">&#9670;&nbsp;</a></span>END_OF_MODE_TABLE</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="struct_module_1_1_rf_switch_mode__t.html">RfSwitchMode_t</a> Module::END_OF_MODE_TABLE = {<a class="el" href="class_module.html#a5a67b3a63420d762ecba9448671c99bfa81cdd8986054c2ae5657eb5dfd536770">MODE_END_OF_TABLE</a>, {}}</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Value to use as the last element in a mode table to indicate the end of the table.</p>
-<p>See <a class="el" href="class_module.html#a870c63233146d03380f753498c975050" title="Some modules contain external RF switch controlled by pins. This function gives RadioLib control over...">setRfSwitchTable()</a> for details. </p>
-
-</div>
-</div>
 <a id="a0c11551e12579bbabf57b19e12555b3c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0c11551e12579bbabf57b19e12555b3c">&#9670;&nbsp;</a></span>RFSWITCH_MAX_PINS</h2>
 

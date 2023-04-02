@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['_7eax25frame_367',['~AX25Frame',['../class_a_x25_frame.html#ab84a13f720ada37aee6201a560d9dc5a',1,'AX25Frame']]],
-  ['_7eita2string_368',['~ITA2String',['../class_i_t_a2_string.html#afde24c931997581878953660192e09a2',1,'ITA2String']]]
+  ['xtal_383',['XTAL',['../class_s_x126x.html#ada0fe6c3d31885952b439135cf0c18f1',1,'SX126x']]]
 ];
