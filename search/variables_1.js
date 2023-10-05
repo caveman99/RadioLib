@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['destcallsign_691',['destCallsign',['../class_a_x25_frame.html#a7fe9805148e2dd46d163cd989473dbff',1,'AX25Frame']]],
-  ['destssid_692',['destSSID',['../class_a_x25_frame.html#af62935e56dc24bca5d2e2aeb932b63f8',1,'AX25Frame']]]
+  ['cflisttype_838',['cfListType',['../struct_lo_ra_w_a_n_band__t.html#a0eec1eadd79d66bd5db12d92c3642423',1,'LoRaWANBand_t']]],
+  ['cid_839',['cid',['../struct_lo_ra_w_a_n_mac_command__t.html#aa41a9955ac6f0fad60b4990955e40834',1,'LoRaWANMacCommand_t']]],
+  ['control_840',['control',['../class_a_x25_frame.html#a5b196079b539dc417ca65dd4ad622f8f',1,'AX25Frame']]]
 ];

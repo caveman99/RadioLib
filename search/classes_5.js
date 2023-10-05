@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ita2string_395',['ITA2String',['../class_i_t_a2_string.html',1,'']]]
+  ['fsk4client_495',['FSK4Client',['../class_f_s_k4_client.html',1,'']]],
+  ['fskrate_5ft_496',['FSKRate_t',['../struct_f_s_k_rate__t.html',1,'']]]
 ];

@@ -106,15 +106,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8f9af4c0a5c2e9de7cdfa1a907479111"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pager_client.html#a8f9af4c0a5c2e9de7cdfa1a907479111">sendTone</a> (uint32_t addr)</td></tr>
 <tr class="memdesc:a8f9af4c0a5c2e9de7cdfa1a907479111"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to send a tone-only alert to a destination pager.  <a href="class_pager_client.html#a8f9af4c0a5c2e9de7cdfa1a907479111">More...</a><br /></td></tr>
 <tr class="separator:a8f9af4c0a5c2e9de7cdfa1a907479111"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab6a8977f89d43620b98bcedf5a47dbd"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pager_client.html#aab6a8977f89d43620b98bcedf5a47dbd">transmit</a> (const char *str, uint32_t addr, uint8_t encoding=RADIOLIB_PAGER_BCD)</td></tr>
-<tr class="memdesc:aab6a8977f89d43620b98bcedf5a47dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">C-string transmit method.  <a href="class_pager_client.html#aab6a8977f89d43620b98bcedf5a47dbd">More...</a><br /></td></tr>
-<tr class="separator:aab6a8977f89d43620b98bcedf5a47dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77aafe7c86e6e1e4e22990be4e7f090b"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pager_client.html#a77aafe7c86e6e1e4e22990be4e7f090b">transmit</a> (uint8_t *data, size_t len, uint32_t addr, uint8_t encoding=RADIOLIB_PAGER_BCD)</td></tr>
-<tr class="memdesc:a77aafe7c86e6e1e4e22990be4e7f090b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binary transmit method. Will transmit arbitrary binary data.  <a href="class_pager_client.html#a77aafe7c86e6e1e4e22990be4e7f090b">More...</a><br /></td></tr>
-<tr class="separator:a77aafe7c86e6e1e4e22990be4e7f090b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6f4f034b71311144f76b629a8ef8f8d"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pager_client.html#ad6f4f034b71311144f76b629a8ef8f8d">startReceive</a> (RADIOLIB_PIN_TYPE pin, uint32_t addr, uint32_t mask=0xFFFFF)</td></tr>
-<tr class="memdesc:ad6f4f034b71311144f76b629a8ef8f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start reception of POCSAG packets.  <a href="class_pager_client.html#ad6f4f034b71311144f76b629a8ef8f8d">More...</a><br /></td></tr>
-<tr class="separator:ad6f4f034b71311144f76b629a8ef8f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbab4e162a5719bd4407a42a85d26ff6"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pager_client.html#adbab4e162a5719bd4407a42a85d26ff6">transmit</a> (const char *str, uint32_t addr, uint8_t encoding=RADIOLIB_PAGER_BCD, uint8_t function=RADIOLIB_PAGER_FUNC_AUTO)</td></tr>
+<tr class="memdesc:adbab4e162a5719bd4407a42a85d26ff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">C-string transmit method.  <a href="class_pager_client.html#adbab4e162a5719bd4407a42a85d26ff6">More...</a><br /></td></tr>
+<tr class="separator:adbab4e162a5719bd4407a42a85d26ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9df7f8675170affc5256a896168601b"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pager_client.html#aa9df7f8675170affc5256a896168601b">transmit</a> (uint8_t *data, size_t len, uint32_t addr, uint8_t encoding=RADIOLIB_PAGER_BCD, uint8_t function=RADIOLIB_PAGER_FUNC_AUTO)</td></tr>
+<tr class="memdesc:aa9df7f8675170affc5256a896168601b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binary transmit method. Will transmit arbitrary binary data.  <a href="class_pager_client.html#aa9df7f8675170affc5256a896168601b">More...</a><br /></td></tr>
+<tr class="separator:aa9df7f8675170affc5256a896168601b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac232570ac012ff315a1971ab0422fed3"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pager_client.html#ac232570ac012ff315a1971ab0422fed3">startReceive</a> (uint32_t pin, uint32_t addr, uint32_t mask=0xFFFFF)</td></tr>
+<tr class="memdesc:ac232570ac012ff315a1971ab0422fed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start reception of POCSAG packets.  <a href="class_pager_client.html#ac232570ac012ff315a1971ab0422fed3">More...</a><br /></td></tr>
+<tr class="separator:ac232570ac012ff315a1971ab0422fed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec073fa9e5adcff9730482d9583715e9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pager_client.html#aec073fa9e5adcff9730482d9583715e9">available</a> ()</td></tr>
 <tr class="memdesc:aec073fa9e5adcff9730482d9583715e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of POCSAG batches available in buffer. Limited by the size of direct mode buffer!  <a href="class_pager_client.html#aec073fa9e5adcff9730482d9583715e9">More...</a><br /></td></tr>
 <tr class="separator:aec073fa9e5adcff9730482d9583715e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,10 +221,10 @@ Public Member Functions</h2></td></tr>
 <p>Initialization method. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">base</td><td>Base (center) frequency to be used in MHz.</td></tr>
-    <tr><td class="paramname">speed</td><td>Bit rate to use in bps. Common POCSAG decoders can receive 512, 1200 and 2400 bps.</td></tr>
-    <tr><td class="paramname">invert</td><td>Enable frequency inversion. Disabled by default (high frequency is digital 0).</td></tr>
-    <tr><td class="paramname">shift</td><td>Set custom frequency shift, defaults to 4500 Hz.</td></tr>
+    <tr><td class="paramname">base</td><td>Base (center) frequency to be used in MHz. </td></tr>
+    <tr><td class="paramname">speed</td><td>Bit rate to use in bps. Common POCSAG decoders can receive 512, 1200 and 2400 bps. </td></tr>
+    <tr><td class="paramname">invert</td><td>Enable frequency inversion. Disabled by default (high frequency is digital 0). </td></tr>
+    <tr><td class="paramname">shift</td><td>Set custom frequency shift, defaults to 4500 Hz. </td></tr>
   </table>
   </dd>
 </dl>
@@ -267,9 +267,9 @@ Public Member Functions</h2></td></tr>
 <p>Reads data that was received after calling startReceive method. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>Pointer to array to save the received message.</td></tr>
-    <tr><td class="paramname">len</td><td>Pointer to variable holding the number of bytes that will be read. When set to 0, the packet length will be retreived automatically. When more bytes than received are requested, only the number of bytes requested will be returned. Upon completion, the number of bytes received will be written to this variable.</td></tr>
-    <tr><td class="paramname">addr</td><td>Pointer to variable holding the address of the received pager message. Set to NULL to not retrieve address.</td></tr>
+    <tr><td class="paramname">data</td><td>Pointer to array to save the received message. </td></tr>
+    <tr><td class="paramname">len</td><td>Pointer to variable holding the number of bytes that will be read. When set to 0, the packet length will be retrieved automatically. When more bytes than received are requested, only the number of bytes requested will be returned. Upon completion, the number of bytes received will be written to this variable. </td></tr>
+    <tr><td class="paramname">addr</td><td>Pointer to variable holding the address of the received pager message. Set to NULL to not retrieve address. </td></tr>
   </table>
   </dd>
 </dl>
@@ -296,7 +296,7 @@ Public Member Functions</h2></td></tr>
 <p>Method to send a tone-only alert to a destination pager. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">addr</td><td>Address of the destination pager. Allowed values are 0 to 2097151 - values above 2000000 are reserved.</td></tr>
+    <tr><td class="paramname">addr</td><td>Address of the destination pager. Allowed values are 0 to 2097151 - values above 2000000 are reserved. </td></tr>
   </table>
   </dd>
 </dl>
@@ -304,8 +304,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad6f4f034b71311144f76b629a8ef8f8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6f4f034b71311144f76b629a8ef8f8d">&#9670;&nbsp;</a></span>startReceive()</h2>
+<a id="ac232570ac012ff315a1971ab0422fed3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac232570ac012ff315a1971ab0422fed3">&#9670;&nbsp;</a></span>startReceive()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -313,7 +313,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">int16_t PagerClient::startReceive </td>
           <td>(</td>
-          <td class="paramtype">RADIOLIB_PIN_TYPE&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>pin</em>, </td>
         </tr>
         <tr>
@@ -339,9 +339,9 @@ Public Member Functions</h2></td></tr>
 <p>Start reception of POCSAG packets. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pin</td><td>Pin to receive digital data on (e.g., DIO2 for <a class="el" href="class_s_x127x.html" title="Base class for SX127x series. All derived classes for SX127x (e.g. SX1278 or SX1272) inherit from thi...">SX127x</a>).</td></tr>
-    <tr><td class="paramname">addr</td><td>Address of this "pager". Allowed values are 0 to 2097151 - values above 2000000 are reserved.</td></tr>
-    <tr><td class="paramname">mask</td><td>Address filter mask - set individual bits to enable or disable match on that bit of the address.¨Set to 0xFFFFF (all bits checked) by default.</td></tr>
+    <tr><td class="paramname">pin</td><td>Pin to receive digital data on (e.g., DIO2 for <a class="el" href="class_s_x127x.html" title="Base class for SX127x series. All derived classes for SX127x (e.g. SX1278 or SX1272) inherit from thi...">SX127x</a>). </td></tr>
+    <tr><td class="paramname">addr</td><td>Address of this "pager". Allowed values are 0 to 2097151 - values above 2000000 are reserved. </td></tr>
+    <tr><td class="paramname">mask</td><td>Address filter mask - set individual bits to enable or disable match on that bit of the address. Set to 0xFFFFF (all bits checked) by default. </td></tr>
   </table>
   </dd>
 </dl>
@@ -349,8 +349,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aab6a8977f89d43620b98bcedf5a47dbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab6a8977f89d43620b98bcedf5a47dbd">&#9670;&nbsp;</a></span>transmit() <span class="overload">[1/2]</span></h2>
+<a id="adbab4e162a5719bd4407a42a85d26ff6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbab4e162a5719bd4407a42a85d26ff6">&#9670;&nbsp;</a></span>transmit() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -371,7 +371,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>encoding</em> = <code>RADIOLIB_PAGER_BCD</code>&#160;</td>
+          <td class="paramname"><em>encoding</em> = <code>RADIOLIB_PAGER_BCD</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>function</em> = <code>RADIOLIB_PAGER_FUNC_AUTO</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -384,9 +390,10 @@ Public Member Functions</h2></td></tr>
 <p>C-string transmit method. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">str</td><td>C-string that will be transmitted.</td></tr>
-    <tr><td class="paramname">addr</td><td>Address of the destination pager. Allowed values are 0 to 2097151 - values above 2000000 are reserved.</td></tr>
-    <tr><td class="paramname">encoding</td><td>Encoding to be used (BCD or ASCII). Defaults to RADIOLIB_PAGER_BCD.</td></tr>
+    <tr><td class="paramname">str</td><td>C-string that will be transmitted. </td></tr>
+    <tr><td class="paramname">addr</td><td>Address of the destination pager. Allowed values are 0 to 2097151 - values above 2000000 are reserved. </td></tr>
+    <tr><td class="paramname">encoding</td><td>Encoding to be used (BCD or ASCII). Defaults to RADIOLIB_PAGER_BCD. </td></tr>
+    <tr><td class="paramname">function</td><td>bits (NUMERIC, TONE, ACTIVATION, ALPHANUMERIC). Allowed values 0 to 3. Defaults to auto select by specified encoding </td></tr>
   </table>
   </dd>
 </dl>
@@ -394,8 +401,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a77aafe7c86e6e1e4e22990be4e7f090b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77aafe7c86e6e1e4e22990be4e7f090b">&#9670;&nbsp;</a></span>transmit() <span class="overload">[2/2]</span></h2>
+<a id="aa9df7f8675170affc5256a896168601b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9df7f8675170affc5256a896168601b">&#9670;&nbsp;</a></span>transmit() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -422,7 +429,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>encoding</em> = <code>RADIOLIB_PAGER_BCD</code>&#160;</td>
+          <td class="paramname"><em>encoding</em> = <code>RADIOLIB_PAGER_BCD</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>function</em> = <code>RADIOLIB_PAGER_FUNC_AUTO</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -435,10 +448,11 @@ Public Member Functions</h2></td></tr>
 <p>Binary transmit method. Will transmit arbitrary binary data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>Binary data that will be transmitted.</td></tr>
-    <tr><td class="paramname">len</td><td>Length of binary data to transmit (in bytes).</td></tr>
-    <tr><td class="paramname">addr</td><td>Address of the destination pager. Allowed values are 0 to 2097151 - values above 2000000 are reserved.</td></tr>
-    <tr><td class="paramname">encoding</td><td>Encoding to be used (BCD or ASCII). Defaults to RADIOLIB_PAGER_BCD.</td></tr>
+    <tr><td class="paramname">data</td><td>Binary data that will be transmitted. </td></tr>
+    <tr><td class="paramname">len</td><td>Length of binary data to transmit (in bytes). </td></tr>
+    <tr><td class="paramname">addr</td><td>Address of the destination pager. Allowed values are 0 to 2097151 - values above 2000000 are reserved. </td></tr>
+    <tr><td class="paramname">encoding</td><td>Encoding to be used (BCD or ASCII). Defaults to RADIOLIB_PAGER_BCD. </td></tr>
+    <tr><td class="paramname">function</td><td>bits (NUMERIC, TONE, ACTIVATION, ALPHANUMERIC). Allowed values 0 to 3. Defaults to auto select by specified encoding </td></tr>
   </table>
   </dd>
 </dl>

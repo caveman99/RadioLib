@@ -253,7 +253,7 @@ Macros</h2></td></tr>
 <tr class="separator:ga85e34d08b298a4125f77ddede011db3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga54a2fc9441c25b56979c6edab097ff12"><td class="memItemLeft" align="right" valign="top"><a id="ga54a2fc9441c25b56979c6edab097ff12"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__status__codes.html#ga54a2fc9441c25b56979c6edab097ff12">RADIOLIB_ERR_MIC_E_TELEMETRY_STATUS</a>&#160;&#160;&#160;(-204)</td></tr>
-<tr class="memdesc:ga54a2fc9441c25b56979c6edab097ff12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mic-E message cannot contaion both telemetry and status text. <br /></td></tr>
+<tr class="memdesc:ga54a2fc9441c25b56979c6edab097ff12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mic-E message cannot contain both telemetry and status text. <br /></td></tr>
 <tr class="separator:ga54a2fc9441c25b56979c6edab097ff12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5d57c9ea944fdad3760fa54ed033ace5"><td class="memItemLeft" align="right" valign="top"><a id="ga5d57c9ea944fdad3760fa54ed033ace5"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__status__codes.html#ga5d57c9ea944fdad3760fa54ed033ace5">RADIOLIB_ERR_INVALID_SSDV_MODE</a>&#160;&#160;&#160;(-301)</td></tr>
@@ -354,6 +354,50 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__status__codes.html#ga806183ed238159d317132b0d44d7a0a2">RADIOLIB_ERR_ADDRESS_NOT_FOUND</a>&#160;&#160;&#160;(-1002)</td></tr>
 <tr class="memdesc:ga806183ed238159d317132b0d44d7a0a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The requested address was not found in the received data. <br /></td></tr>
 <tr class="separator:ga806183ed238159d317132b0d44d7a0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga025420df476275dc901f67dd6ae13a9c"><td class="memItemLeft" align="right" valign="top"><a id="ga025420df476275dc901f67dd6ae13a9c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__status__codes.html#ga025420df476275dc901f67dd6ae13a9c">RADIOLIB_ERR_INVALID_FUNCTION</a>&#160;&#160;&#160;(-1003)</td></tr>
+<tr class="memdesc:ga025420df476275dc901f67dd6ae13a9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function code is invalid. 2 Bits only. <br /></td></tr>
+<tr class="separator:ga025420df476275dc901f67dd6ae13a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc3bca002b982af27b703c30b2d12df3"><td class="memItemLeft" align="right" valign="top"><a id="gafc3bca002b982af27b703c30b2d12df3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__status__codes.html#gafc3bca002b982af27b703c30b2d12df3">RADIOLIB_ERR_NETWORK_NOT_JOINED</a>&#160;&#160;&#160;(-1101)</td></tr>
+<tr class="memdesc:gafc3bca002b982af27b703c30b2d12df3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unable to restore existing LoRaWAN session because this node did not join any network yet. <br /></td></tr>
+<tr class="separator:gafc3bca002b982af27b703c30b2d12df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab120f980c06c581cd071452464199aac"><td class="memItemLeft" align="right" valign="top"><a id="gab120f980c06c581cd071452464199aac"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__status__codes.html#gab120f980c06c581cd071452464199aac">RADIOLIB_ERR_DOWNLINK_MALFORMED</a>&#160;&#160;&#160;(-1102)</td></tr>
+<tr class="memdesc:gab120f980c06c581cd071452464199aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Malformed downlink packet received from network server. <br /></td></tr>
+<tr class="separator:gab120f980c06c581cd071452464199aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3de55ebac1629efa9c64a9d6c201482a"><td class="memItemLeft" align="right" valign="top"><a id="ga3de55ebac1629efa9c64a9d6c201482a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__status__codes.html#ga3de55ebac1629efa9c64a9d6c201482a">RADIOLIB_ERR_INVALID_REVISION</a>&#160;&#160;&#160;(-1103)</td></tr>
+<tr class="memdesc:ga3de55ebac1629efa9c64a9d6c201482a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Network server requested switch to unsupported LoRaWAN revision. <br /></td></tr>
+<tr class="separator:ga3de55ebac1629efa9c64a9d6c201482a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96db1938b39b1b9cb7e8229718f08ff2"><td class="memItemLeft" align="right" valign="top"><a id="ga96db1938b39b1b9cb7e8229718f08ff2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__status__codes.html#ga96db1938b39b1b9cb7e8229718f08ff2">RADIOLIB_ERR_INVALID_PORT</a>&#160;&#160;&#160;(-1104)</td></tr>
+<tr class="memdesc:ga96db1938b39b1b9cb7e8229718f08ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalid LoRaWAN uplink port requested by user. <br /></td></tr>
+<tr class="separator:ga96db1938b39b1b9cb7e8229718f08ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf823b58331e32d37a9378a114d7d08e"><td class="memItemLeft" align="right" valign="top"><a id="gacf823b58331e32d37a9378a114d7d08e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__status__codes.html#gacf823b58331e32d37a9378a114d7d08e">RADIOLIB_ERR_NO_RX_WINDOW</a>&#160;&#160;&#160;(-1105)</td></tr>
+<tr class="memdesc:gacf823b58331e32d37a9378a114d7d08e"><td class="mdescLeft">&#160;</td><td class="mdescRight">User did not enable downlink in time. <br /></td></tr>
+<tr class="separator:gacf823b58331e32d37a9378a114d7d08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5305b2452d4d2d9c495a7c882f96aca6"><td class="memItemLeft" align="right" valign="top"><a id="ga5305b2452d4d2d9c495a7c882f96aca6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__status__codes.html#ga5305b2452d4d2d9c495a7c882f96aca6">RADIOLIB_ERR_INVALID_CHANNEL</a>&#160;&#160;&#160;(-1106)</td></tr>
+<tr class="memdesc:ga5305b2452d4d2d9c495a7c882f96aca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">No valid channel for the currently active LoRaWAN band was found. <br /></td></tr>
+<tr class="separator:ga5305b2452d4d2d9c495a7c882f96aca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5133c0c17301cfc39ac6121c5851292f"><td class="memItemLeft" align="right" valign="top"><a id="ga5133c0c17301cfc39ac6121c5851292f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__status__codes.html#ga5133c0c17301cfc39ac6121c5851292f">RADIOLIB_ERR_INVALID_CID</a>&#160;&#160;&#160;(-1107)</td></tr>
+<tr class="memdesc:ga5133c0c17301cfc39ac6121c5851292f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalid LoRaWAN MAC command ID. <br /></td></tr>
+<tr class="separator:ga5133c0c17301cfc39ac6121c5851292f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b424bb8992a6ac80e2ba46667bf9c6e"><td class="memItemLeft" align="right" valign="top"><a id="ga8b424bb8992a6ac80e2ba46667bf9c6e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__status__codes.html#ga8b424bb8992a6ac80e2ba46667bf9c6e">RADIOLIB_ERR_UPLINK_UNAVAILABLE</a>&#160;&#160;&#160;(-1108)</td></tr>
+<tr class="memdesc:ga8b424bb8992a6ac80e2ba46667bf9c6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">User requested to start uplink while still inside RX window. <br /></td></tr>
+<tr class="separator:ga8b424bb8992a6ac80e2ba46667bf9c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga442250961d11f2582857cd1eafe0df17"><td class="memItemLeft" align="right" valign="top"><a id="ga442250961d11f2582857cd1eafe0df17"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__status__codes.html#ga442250961d11f2582857cd1eafe0df17">RADIOLIB_ERR_COMMAND_QUEUE_FULL</a>&#160;&#160;&#160;(-1109)</td></tr>
+<tr class="memdesc:ga442250961d11f2582857cd1eafe0df17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unable to push new MAC command because the queue is full. <br /></td></tr>
+<tr class="separator:ga442250961d11f2582857cd1eafe0df17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fc9d71b0a60dfc859b392a7474521c0"><td class="memItemLeft" align="right" valign="top"><a id="ga9fc9d71b0a60dfc859b392a7474521c0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__status__codes.html#ga9fc9d71b0a60dfc859b392a7474521c0">RADIOLIB_ERR_COMMAND_QUEUE_EMPTY</a>&#160;&#160;&#160;(-1110)</td></tr>
+<tr class="memdesc:ga9fc9d71b0a60dfc859b392a7474521c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unable to pop existing MAC command because the queue is empty. <br /></td></tr>
+<tr class="separator:ga9fc9d71b0a60dfc859b392a7474521c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>

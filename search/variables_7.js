@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['protocolid_700',['protocolID',['../class_a_x25_frame.html#aa8895fea37220c82f68bd320331595c8',1,'AX25Frame']]]
+  ['joinrequestdatarate_868',['joinRequestDataRate',['../struct_lo_ra_w_a_n_channel_span__t.html#a09bbd5a4bc1f458769f0d28bdeb4a502',1,'LoRaWANChannelSpan_t']]]
 ];

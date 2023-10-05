@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['tones_717',['tones',['../struct_s_s_t_v_mode__t.html#a27c6a271c1aa8e499a31a784ab9254ad',1,'SSTVMode_t']]],
-  ['type_718',['type',['../structtone__t.html#af92472bf087b9a7ec0c350bd503bdd74',1,'tone_t']]]
+  ['out_874',['out',['../class_radio_lib_c_r_c.html#a46616ef58e9eeeca646de0c9fe681050',1,'RadioLibCRC']]]
 ];
