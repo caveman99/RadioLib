@@ -1,6 +1,7 @@
 var class_c_c1101 =
 [
     [ "CC1101", "class_c_c1101.html#a6807e4254c4b55fa8d393b2bf8f2db3e", null ],
+    [ "autoSetRxBandwidth", "class_c_c1101.html#a476adec156ae39974e70ef17b9af7db3", null ],
     [ "begin", "class_c_c1101.html#ad86f23bb3d113d20f6238a671f18b565", null ],
     [ "clearGdo0Action", "class_c_c1101.html#ab5e6b3745f80cf61e1ced33303311df8", null ],
     [ "clearGdo2Action", "class_c_c1101.html#ac7a8b1fe7d08dc6db20cf1569b0d37b4", null ],
@@ -14,7 +15,6 @@ var class_c_c1101 =
     [ "getChipVersion", "class_c_c1101.html#a2a4c6e622dffd2788d8ac52d708b0705", null ],
     [ "getFrequencyDeviation", "class_c_c1101.html#abe26fa310e973bf2b14750b9eae02124", null ],
     [ "getLQI", "class_c_c1101.html#a59ca9e8956e308159949638bf327e5fb", null ],
-    [ "getMod", "class_c_c1101.html#ad47b3b7bd67159638ff9afcfe002fc66", null ],
     [ "getPacketLength", "class_c_c1101.html#a122281f6a915b77ee9dafc9926e731a0", null ],
     [ "getPromiscuousMode", "class_c_c1101.html#aeea78919ec14d940cda0f213e4fdced6", null ],
     [ "getRSSI", "class_c_c1101.html#a490b2aa48bd7e5728fa82882411910dc", null ],
@@ -44,7 +44,7 @@ var class_c_c1101 =
     [ "setPacketReceivedAction", "class_c_c1101.html#a4f47f83e7a1cb6cd014161803db867fb", null ],
     [ "setPacketSentAction", "class_c_c1101.html#aff4ddeb8f8680307079a1e84de1cc676", null ],
     [ "setPreambleLength", "class_c_c1101.html#ae77c828c9c7cc12012fe011e8c4d3570", null ],
-    [ "setPromiscuousMode", "class_c_c1101.html#a047be5159af73374521a26e8f880fe12", null ],
+    [ "setPromiscuousMode", "class_c_c1101.html#ac1155543b27e46fa27aa4c9180da18bb", null ],
     [ "setRfSwitchPins", "class_c_c1101.html#a5ef45183690bb1879f106af079b01140", null ],
     [ "setRfSwitchTable", "class_c_c1101.html#a7b401995be4bc136063a035ce1820634", null ],
     [ "setRxBandwidth", "class_c_c1101.html#a381d0059d7a0ccd8a2f54d7d3376f9b6", null ],

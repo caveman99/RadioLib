@@ -1,13 +1,16 @@
 var group__status__codes =
 [
     [ "RADIOLIB_CHANNEL_FREE", "group__status__codes.html#ga4673596b2cc7290be5ee0a2e9ee42718", null ],
+    [ "RADIOLIB_ERR_A_FCNT_DOWN_INVALID", "group__status__codes.html#ga81bd164044ef4d523464ad17d1e473bb", null ],
     [ "RADIOLIB_ERR_ACK_NOT_RECEIVED", "group__status__codes.html#gafeff72bd7b618959d86b804a11f09063", null ],
     [ "RADIOLIB_ERR_ADDRESS_NOT_FOUND", "group__status__codes.html#ga806183ed238159d317132b0d44d7a0a2", null ],
+    [ "RADIOLIB_ERR_CHECKSUM_MISMATCH", "group__status__codes.html#gace49554c055f7b2d02ef0c39c006529c", null ],
     [ "RADIOLIB_ERR_CHIP_NOT_FOUND", "group__status__codes.html#ga5d11e8ce64fb412c2169d0f30b9e9c62", null ],
-    [ "RADIOLIB_ERR_COMMAND_QUEUE_EMPTY", "group__status__codes.html#ga9fc9d71b0a60dfc859b392a7474521c0", null ],
     [ "RADIOLIB_ERR_COMMAND_QUEUE_FULL", "group__status__codes.html#ga442250961d11f2582857cd1eafe0df17", null ],
+    [ "RADIOLIB_ERR_COMMAND_QUEUE_ITEM_NOT_FOUND", "group__status__codes.html#gac4e026589229f7f737c77c641447d180", null ],
     [ "RADIOLIB_ERR_CRC_MISMATCH", "group__status__codes.html#ga9da949184e940a4fa6f4afb63c315963", null ],
     [ "RADIOLIB_ERR_DOWNLINK_MALFORMED", "group__status__codes.html#gab120f980c06c581cd071452464199aac", null ],
+    [ "RADIOLIB_ERR_DWELL_TIME_EXCEEDED", "group__status__codes.html#gac78ef1a402159a3be27a6b92268106b7", null ],
     [ "RADIOLIB_ERR_INVALID_ADDRESS_WIDTH", "group__status__codes.html#gafbc04b924d23cba05307e94972d7d607", null ],
     [ "RADIOLIB_ERR_INVALID_BANDWIDTH", "group__status__codes.html#ga0710b406a7e12ab6e0f77fdb3374cd9a", null ],
     [ "RADIOLIB_ERR_INVALID_BIT_RANGE", "group__status__codes.html#ga508806c18663156b0d00d1a21c957468", null ],
@@ -56,9 +59,11 @@ var group__status__codes =
     [ "RADIOLIB_ERR_INVALID_SYMBOL", "group__status__codes.html#ga7f9712de2117b89215410fc18776dc84", null ],
     [ "RADIOLIB_ERR_INVALID_SYNC_WORD", "group__status__codes.html#ga5584a219fcb1a8e1789142b18a3a511e", null ],
     [ "RADIOLIB_ERR_INVALID_TCXO_VOLTAGE", "group__status__codes.html#ga691e968e9f057a6cecb37a5dd5d8bd68", null ],
+    [ "RADIOLIB_ERR_JOIN_NONCE_INVALID", "group__status__codes.html#ga68c7f7b8c699dbd6524da685be476fca", null ],
     [ "RADIOLIB_ERR_LORA_HEADER_DAMAGED", "group__status__codes.html#gab152891bb13f6f70e6631820904e9d90", null ],
     [ "RADIOLIB_ERR_MEMORY_ALLOCATION_FAILED", "group__status__codes.html#ga7afc28738967d4d91c13d1d412d6f5e4", null ],
     [ "RADIOLIB_ERR_MIC_E_TELEMETRY_STATUS", "group__status__codes.html#ga54a2fc9441c25b56979c6edab097ff12", null ],
+    [ "RADIOLIB_ERR_N_FCNT_DOWN_INVALID", "group__status__codes.html#gac67f8a734c2011f738db1a3159403e09", null ],
     [ "RADIOLIB_ERR_NETWORK_NOT_JOINED", "group__status__codes.html#gafc3bca002b982af27b703c30b2d12df3", null ],
     [ "RADIOLIB_ERR_NO_RX_WINDOW", "group__status__codes.html#gacf823b58331e32d37a9378a114d7d08e", null ],
     [ "RADIOLIB_ERR_NONE", "group__status__codes.html#ga4c1dd3c7f2b37c973a047c58506729f5", null ],
@@ -77,5 +82,6 @@ var group__status__codes =
     [ "RADIOLIB_ERR_UPLINK_UNAVAILABLE", "group__status__codes.html#ga8b424bb8992a6ac80e2ba46667bf9c6e", null ],
     [ "RADIOLIB_ERR_WRONG_MODEM", "group__status__codes.html#gad95d2455d580745d41ef2f319c6585f8", null ],
     [ "RADIOLIB_LORA_DETECTED", "group__status__codes.html#ga58ff08f4dba334cf8e26474ec2d3facd", null ],
+    [ "RADIOLIB_LORAWAN_NO_DOWNLINK", "group__status__codes.html#ga54253de08594806b0a6cd8fd0576e6aa", null ],
     [ "RADIOLIB_PREAMBLE_DETECTED", "group__status__codes.html#ga382dc113e93f196401914853ec176b18", null ]
 ];
