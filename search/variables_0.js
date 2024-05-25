@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['bandnum_924',['bandNum',['../struct_lo_ra_w_a_n_band__t.html#abb14a7c48ec89a944f441517b1d55986',1,'LoRaWANBand_t']]],
-  ['bandtype_925',['bandType',['../struct_lo_ra_w_a_n_band__t.html#ad7ab17cc0b530fb99c3be39fd6411802',1,'LoRaWANBand_t']]],
-  ['baudrate_926',['baudRate',['../struct_bell_modem__t.html#a8e16be8997a90db9a4b2482ec7e93171',1,'BellModem_t']]]
+  ['almanacgnss_1060',['almanacGNSS',['../struct_l_r11x0_version_info__t.html#ad1839f1cb6a067cc21651d95908cff67',1,'LR11x0VersionInfo_t']]],
+  ['ap_1061',['ap',['../struct_l_r11x0_wifi_result__t.html#a18a5615328bfc7b549a7ef1a5514c087',1,'LR11x0WifiResult_t']]]
 ];

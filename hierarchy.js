@@ -9,9 +9,6 @@ var hierarchy =
     ] ],
     [ "AX25Client", "class_a_x25_client.html", null ],
     [ "AX25Frame", "class_a_x25_frame.html", null ],
-    [ "Bell101", "struct_bell101.html", null ],
-    [ "Bell103", "struct_bell103.html", null ],
-    [ "Bell202", "struct_bell202.html", null ],
     [ "BellModem_t", "struct_bell_modem__t.html", null ],
     [ "DataRate_t", "union_data_rate__t.html", null ],
     [ "FSK4Client", "class_f_s_k4_client.html", null ],
@@ -23,10 +20,17 @@ var hierarchy =
     [ "LoRaWANChannel_t", "struct_lo_ra_w_a_n_channel__t.html", null ],
     [ "LoRaWANChannelSpan_t", "struct_lo_ra_w_a_n_channel_span__t.html", null ],
     [ "LoRaWANEvent_t", "struct_lo_ra_w_a_n_event__t.html", null ],
+    [ "LoRaWANJoinEvent_t", "struct_lo_ra_w_a_n_join_event__t.html", null ],
     [ "LoRaWANMacCommand_t", "struct_lo_ra_w_a_n_mac_command__t.html", null ],
     [ "LoRaWANMacCommandQueue_t", "struct_lo_ra_w_a_n_mac_command_queue__t.html", null ],
     [ "LoRaWANMacSpec_t", "struct_lo_ra_w_a_n_mac_spec__t.html", null ],
     [ "LoRaWANNode", "class_lo_ra_w_a_n_node.html", null ],
+    [ "LR11x0VersionInfo_t", "struct_l_r11x0_version_info__t.html", null ],
+    [ "LR11x0WifiResult_t", "struct_l_r11x0_wifi_result__t.html", [
+      [ "LR11x0WifiResultFull_t", "struct_l_r11x0_wifi_result_full__t.html", [
+        [ "LR11x0WifiResultExtended_t", "struct_l_r11x0_wifi_result_extended__t.html", null ]
+      ] ]
+    ] ],
     [ "Module", "class_module.html", [
       [ "STM32WLx_Module", "class_s_t_m32_w_lx___module.html", null ]
     ] ],
@@ -34,6 +38,12 @@ var hierarchy =
     [ "PhysicalLayer", "class_physical_layer.html", [
       [ "CC1101", "class_c_c1101.html", null ],
       [ "ExternalRadio", "class_external_radio.html", null ],
+      [ "LR11x0", "class_l_r11x0.html", [
+        [ "LR1110", "class_l_r1110.html", null ],
+        [ "LR1120", "class_l_r1120.html", [
+          [ "LR1121", "class_l_r1121.html", null ]
+        ] ]
+      ] ],
       [ "RF69", "class_r_f69.html", [
         [ "SX1231", "class_s_x1231.html", [
           [ "SX1233", "class_s_x1233.html", null ]
@@ -89,6 +99,7 @@ var hierarchy =
     [ "RFM97", "class_r_f_m97.html", null ],
     [ "RFM98", "class_r_f_m98.html", null ],
     [ "Module::RfSwitchMode_t", "struct_module_1_1_rf_switch_mode__t.html", null ],
+    [ "Module::SPIConfig_t", "struct_module_1_1_s_p_i_config__t.html", null ],
     [ "SSTVClient", "class_s_s_t_v_client.html", null ],
     [ "SSTVMode_t", "struct_s_s_t_v_mode__t.html", null ],
     [ "tone_t", "structtone__t.html", null ]

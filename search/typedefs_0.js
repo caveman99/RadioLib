@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['spiparsestatuscb_5ft_1009',['SPIparseStatusCb_t',['../class_module.html#a9393088249856eab568126aeb2493e4a',1,'Module']]]
+  ['radiolibtime_5ft_1199',['RadioLibTime_t',['../group__typedefs.html#ga210f31dd2bff7fb80563275648a5bbbd',1,'TypeDef.h']]]
 ];

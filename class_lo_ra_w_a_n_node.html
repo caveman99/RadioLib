@@ -101,10 +101,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aae05de563f765f14fe267e4d65844f76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#aae05de563f765f14fe267e4d65844f76">LoRaWANNode</a> (<a class="el" href="class_physical_layer.html">PhysicalLayer</a> *phy, const <a class="el" href="struct_lo_ra_w_a_n_band__t.html">LoRaWANBand_t</a> *band, uint8_t subBand=0)</td></tr>
 <tr class="memdesc:aae05de563f765f14fe267e4d65844f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="class_lo_ra_w_a_n_node.html#aae05de563f765f14fe267e4d65844f76">More...</a><br /></td></tr>
 <tr class="separator:aae05de563f765f14fe267e4d65844f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9613998d071bcf401be9ad57ff8591ea"><td class="memItemLeft" align="right" valign="top"><a id="a9613998d071bcf401be9ad57ff8591ea"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a9613998d071bcf401be9ad57ff8591ea">wipe</a> ()</td></tr>
-<tr class="memdesc:a9613998d071bcf401be9ad57ff8591ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wipe internal persistent parameters. This will reset all counters and saved variables, so the device will have to rejoin the network. <br /></td></tr>
-<tr class="separator:a9613998d071bcf401be9ad57ff8591ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0feeaed200d8f94ad94c3ed49f404847"><td class="memItemLeft" align="right" valign="top"><a id="a0feeaed200d8f94ad94c3ed49f404847"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a0feeaed200d8f94ad94c3ed49f404847">clearSession</a> ()</td></tr>
+<tr class="memdesc:a0feeaed200d8f94ad94c3ed49f404847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear an active session, so that the device will have to rejoin the network. <br /></td></tr>
+<tr class="separator:a0feeaed200d8f94ad94c3ed49f404847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84004883006b4a498d4899874952445b"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a84004883006b4a498d4899874952445b">getBufferNonces</a> ()</td></tr>
 <tr class="memdesc:a84004883006b4a498d4899874952445b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the pointer to the internal buffer that holds the LW base parameters.  <a href="class_lo_ra_w_a_n_node.html#a84004883006b4a498d4899874952445b">More...</a><br /></td></tr>
 <tr class="separator:a84004883006b4a498d4899874952445b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,84 +117,84 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:aadebe7a412aec8043aa2f8f57a202f49"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#aadebe7a412aec8043aa2f8f57a202f49">setBufferSession</a> (uint8_t *persistentBuffer)</td></tr>
 <tr class="memdesc:aadebe7a412aec8043aa2f8f57a202f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill the internal buffer that holds the LW session parameters with a supplied buffer.  <a href="class_lo_ra_w_a_n_node.html#aadebe7a412aec8043aa2f8f57a202f49">More...</a><br /></td></tr>
 <tr class="separator:aadebe7a412aec8043aa2f8f57a202f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c0e89befd10c6977031669fd62f127b"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a6c0e89befd10c6977031669fd62f127b">restore</a> (uint16_t checkSum, uint16_t lwMode, uint8_t lwClass, uint8_t freqPlan)</td></tr>
-<tr class="memdesc:a6c0e89befd10c6977031669fd62f127b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore session by loading information from persistent storage.  <a href="class_lo_ra_w_a_n_node.html#a6c0e89befd10c6977031669fd62f127b">More...</a><br /></td></tr>
-<tr class="separator:a6c0e89befd10c6977031669fd62f127b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27bbbb946a1676a084841d293499ea87"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a27bbbb946a1676a084841d293499ea87">beginOTAA</a> (uint64_t joinEUI, uint64_t devEUI, uint8_t *nwkKey, uint8_t *appKey, bool force=false, uint8_t joinDr=RADIOLIB_LORAWAN_DATA_RATE_UNUSED)</td></tr>
-<tr class="memdesc:a27bbbb946a1676a084841d293499ea87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join network by performing over-the-air activation. By this procedure, the device will perform an exchange with the network server and set all necessary configuration.  <a href="class_lo_ra_w_a_n_node.html#a27bbbb946a1676a084841d293499ea87">More...</a><br /></td></tr>
-<tr class="separator:a27bbbb946a1676a084841d293499ea87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54c23c4676905aa17119d5a5dd5fa8a8"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a54c23c4676905aa17119d5a5dd5fa8a8">beginABP</a> (uint32_t addr, uint8_t *nwkSKey, uint8_t *appSKey, uint8_t *fNwkSIntKey=NULL, uint8_t *sNwkSIntKey=NULL, bool force=false, uint8_t initialDr=RADIOLIB_LORAWAN_DATA_RATE_UNUSED)</td></tr>
-<tr class="memdesc:a54c23c4676905aa17119d5a5dd5fa8a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join network by performing activation by personalization. In this procedure, all necessary configuration must be provided by the user.  <a href="class_lo_ra_w_a_n_node.html#a54c23c4676905aa17119d5a5dd5fa8a8">More...</a><br /></td></tr>
-<tr class="separator:a54c23c4676905aa17119d5a5dd5fa8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7a8ae58391e00b5fcb99f01832cc4fc"><td class="memItemLeft" align="right" valign="top"><a id="af7a8ae58391e00b5fcb99f01832cc4fc"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#af7a8ae58391e00b5fcb99f01832cc4fc">isJoined</a> ()</td></tr>
-<tr class="memdesc:af7a8ae58391e00b5fcb99f01832cc4fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether there is an ongoing session active. <br /></td></tr>
-<tr class="separator:af7a8ae58391e00b5fcb99f01832cc4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7078a3f1657a2a022bb43f2bd34c93e3"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a7078a3f1657a2a022bb43f2bd34c93e3">saveSession</a> ()</td></tr>
-<tr class="memdesc:a7078a3f1657a2a022bb43f2bd34c93e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the current state of the session to the session buffer.  <a href="class_lo_ra_w_a_n_node.html#a7078a3f1657a2a022bb43f2bd34c93e3">More...</a><br /></td></tr>
-<tr class="separator:a7078a3f1657a2a022bb43f2bd34c93e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ff678f9cb57b97eb63886953aca1ba9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a6ff678f9cb57b97eb63886953aca1ba9">sendMacCommandReq</a> (uint8_t cid)</td></tr>
-<tr class="memdesc:a6ff678f9cb57b97eb63886953aca1ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a MAC command to the uplink queue. Only LinkCheck and DeviceTime are available to the user. Other commands are ignored; duplicate MAC commands are discarded.  <a href="class_lo_ra_w_a_n_node.html#a6ff678f9cb57b97eb63886953aca1ba9">More...</a><br /></td></tr>
-<tr class="separator:a6ff678f9cb57b97eb63886953aca1ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e3c2642ebb6e86d6a739ea68d692e6a"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a0e3c2642ebb6e86d6a739ea68d692e6a">uplink</a> (const char *str, uint8_t port, bool isConfirmed=false, <a class="el" href="struct_lo_ra_w_a_n_event__t.html">LoRaWANEvent_t</a> *event=NULL)</td></tr>
-<tr class="memdesc:a0e3c2642ebb6e86d6a739ea68d692e6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to the server.  <a href="class_lo_ra_w_a_n_node.html#a0e3c2642ebb6e86d6a739ea68d692e6a">More...</a><br /></td></tr>
-<tr class="separator:a0e3c2642ebb6e86d6a739ea68d692e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b919dc97479294a32b2d0c9dde49be8"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a1b919dc97479294a32b2d0c9dde49be8">uplink</a> (uint8_t *data, size_t len, uint8_t port, bool isConfirmed=false, <a class="el" href="struct_lo_ra_w_a_n_event__t.html">LoRaWANEvent_t</a> *event=NULL)</td></tr>
-<tr class="memdesc:a1b919dc97479294a32b2d0c9dde49be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to the server.  <a href="class_lo_ra_w_a_n_node.html#a1b919dc97479294a32b2d0c9dde49be8">More...</a><br /></td></tr>
-<tr class="separator:a1b919dc97479294a32b2d0c9dde49be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2303cbbfc9c18e267c074284a4f1bf68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a2303cbbfc9c18e267c074284a4f1bf68">beginOTAA</a> (uint64_t joinEUI, uint64_t devEUI, uint8_t *nwkKey, uint8_t *appKey)</td></tr>
+<tr class="memdesc:a2303cbbfc9c18e267c074284a4f1bf68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the device credentials and activation configuration.  <a href="class_lo_ra_w_a_n_node.html#a2303cbbfc9c18e267c074284a4f1bf68">More...</a><br /></td></tr>
+<tr class="separator:a2303cbbfc9c18e267c074284a4f1bf68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28cd11360e9c3d8fdcdf91a0df1bf597"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a28cd11360e9c3d8fdcdf91a0df1bf597">activateOTAA</a> (uint8_t initialDr=RADIOLIB_LW_DATA_RATE_UNUSED, <a class="el" href="struct_lo_ra_w_a_n_join_event__t.html">LoRaWANJoinEvent_t</a> *joinEvent=NULL)</td></tr>
+<tr class="memdesc:a28cd11360e9c3d8fdcdf91a0df1bf597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join network by restoring OTAA session or performing over-the-air activation. By this procedure, the device will perform an exchange with the network server and set all necessary configuration.  <a href="class_lo_ra_w_a_n_node.html#a28cd11360e9c3d8fdcdf91a0df1bf597">More...</a><br /></td></tr>
+<tr class="separator:a28cd11360e9c3d8fdcdf91a0df1bf597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92c59b540dee631e7bd8153479328611"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a92c59b540dee631e7bd8153479328611">beginABP</a> (uint32_t addr, uint8_t *fNwkSIntKey, uint8_t *sNwkSIntKey, uint8_t *nwkSEncKey, uint8_t *appSKey)</td></tr>
+<tr class="memdesc:a92c59b540dee631e7bd8153479328611"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the device credentials and activation configuration.  <a href="class_lo_ra_w_a_n_node.html#a92c59b540dee631e7bd8153479328611">More...</a><br /></td></tr>
+<tr class="separator:a92c59b540dee631e7bd8153479328611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb49f11ef6f7f826a72e76d7c48280c8"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#afb49f11ef6f7f826a72e76d7c48280c8">activateABP</a> (uint8_t initialDr=RADIOLIB_LW_DATA_RATE_UNUSED)</td></tr>
+<tr class="memdesc:afb49f11ef6f7f826a72e76d7c48280c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join network by restoring ABP session or performing over-the-air activation. In this procedure, all necessary configuration must be provided by the user.  <a href="class_lo_ra_w_a_n_node.html#afb49f11ef6f7f826a72e76d7c48280c8">More...</a><br /></td></tr>
+<tr class="separator:afb49f11ef6f7f826a72e76d7c48280c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a44677a1ef7db1216bc482139d6be8d"><td class="memItemLeft" align="right" valign="top"><a id="a9a44677a1ef7db1216bc482139d6be8d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a9a44677a1ef7db1216bc482139d6be8d">isActivated</a> ()</td></tr>
+<tr class="memdesc:a9a44677a1ef7db1216bc482139d6be8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether there is an ongoing session active. <br /></td></tr>
+<tr class="separator:a9a44677a1ef7db1216bc482139d6be8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adef05650cf4eb92042ca5e2688c1e164"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#adef05650cf4eb92042ca5e2688c1e164">sendMacCommandReq</a> (uint8_t cid)</td></tr>
+<tr class="memdesc:adef05650cf4eb92042ca5e2688c1e164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a MAC command to the uplink queue. Only LinkCheck and DeviceTime are available to the user. Other commands are ignored; duplicate MAC commands are discarded.  <a href="class_lo_ra_w_a_n_node.html#adef05650cf4eb92042ca5e2688c1e164">More...</a><br /></td></tr>
+<tr class="separator:adef05650cf4eb92042ca5e2688c1e164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa484970865e476311bf25969968fff"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a1fa484970865e476311bf25969968fff">uplink</a> (const char *str, uint8_t fPort, bool isConfirmed=false, <a class="el" href="struct_lo_ra_w_a_n_event__t.html">LoRaWANEvent_t</a> *event=NULL)</td></tr>
+<tr class="memdesc:a1fa484970865e476311bf25969968fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to the server.  <a href="class_lo_ra_w_a_n_node.html#a1fa484970865e476311bf25969968fff">More...</a><br /></td></tr>
+<tr class="separator:a1fa484970865e476311bf25969968fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66c170a6055e66915d3e94ce43a63e58"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a66c170a6055e66915d3e94ce43a63e58">uplink</a> (uint8_t *data, size_t len, uint8_t fPort, bool isConfirmed=false, <a class="el" href="struct_lo_ra_w_a_n_event__t.html">LoRaWANEvent_t</a> *event=NULL)</td></tr>
+<tr class="memdesc:a66c170a6055e66915d3e94ce43a63e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to the server.  <a href="class_lo_ra_w_a_n_node.html#a66c170a6055e66915d3e94ce43a63e58">More...</a><br /></td></tr>
+<tr class="separator:a66c170a6055e66915d3e94ce43a63e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabced307f6662998608f01fab25e4226"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#aabced307f6662998608f01fab25e4226">downlink</a> (uint8_t *data, size_t *len, <a class="el" href="struct_lo_ra_w_a_n_event__t.html">LoRaWANEvent_t</a> *event=NULL)</td></tr>
 <tr class="memdesc:aabced307f6662998608f01fab25e4226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for downlink from the server in either RX1 or RX2 window.  <a href="class_lo_ra_w_a_n_node.html#aabced307f6662998608f01fab25e4226">More...</a><br /></td></tr>
 <tr class="separator:aabced307f6662998608f01fab25e4226"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae532e739ada04ea7463494a426f60b4d"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#ae532e739ada04ea7463494a426f60b4d">downlink</a> (<a class="el" href="struct_lo_ra_w_a_n_event__t.html">LoRaWANEvent_t</a> *event=NULL)</td></tr>
 <tr class="memdesc:ae532e739ada04ea7463494a426f60b4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for downlink, simplified to allow for simpler sendReceive.  <a href="class_lo_ra_w_a_n_node.html#ae532e739ada04ea7463494a426f60b4d">More...</a><br /></td></tr>
 <tr class="separator:ae532e739ada04ea7463494a426f60b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a158f65517fa910ef0cbcd92206dab284"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a158f65517fa910ef0cbcd92206dab284">sendReceive</a> (const char *strUp, uint8_t port, uint8_t *dataDown, size_t *lenDown, bool isConfirmed=false, <a class="el" href="struct_lo_ra_w_a_n_event__t.html">LoRaWANEvent_t</a> *eventUp=NULL, <a class="el" href="struct_lo_ra_w_a_n_event__t.html">LoRaWANEvent_t</a> *eventDown=NULL)</td></tr>
-<tr class="memdesc:a158f65517fa910ef0cbcd92206dab284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to the server and wait for a downlink during Rx1 and/or Rx2 window.  <a href="class_lo_ra_w_a_n_node.html#a158f65517fa910ef0cbcd92206dab284">More...</a><br /></td></tr>
-<tr class="separator:a158f65517fa910ef0cbcd92206dab284"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bd48e0ef0dfc6b05014e3a2f55cb51c"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a7bd48e0ef0dfc6b05014e3a2f55cb51c">sendReceive</a> (uint8_t *dataUp, size_t lenUp, uint8_t port, uint8_t *dataDown, size_t *lenDown, bool isConfirmed=false, <a class="el" href="struct_lo_ra_w_a_n_event__t.html">LoRaWANEvent_t</a> *eventUp=NULL, <a class="el" href="struct_lo_ra_w_a_n_event__t.html">LoRaWANEvent_t</a> *eventDown=NULL)</td></tr>
-<tr class="memdesc:a7bd48e0ef0dfc6b05014e3a2f55cb51c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to the server and wait for a downlink during Rx1 and/or Rx2 window.  <a href="class_lo_ra_w_a_n_node.html#a7bd48e0ef0dfc6b05014e3a2f55cb51c">More...</a><br /></td></tr>
-<tr class="separator:a7bd48e0ef0dfc6b05014e3a2f55cb51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0eba2805fa72c8d69d8f73118b49431"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#af0eba2805fa72c8d69d8f73118b49431">sendReceive</a> (uint8_t *dataUp, size_t lenUp, uint8_t port=1, bool isConfirmed=false, <a class="el" href="struct_lo_ra_w_a_n_event__t.html">LoRaWANEvent_t</a> *eventUp=NULL, <a class="el" href="struct_lo_ra_w_a_n_event__t.html">LoRaWANEvent_t</a> *eventDown=NULL)</td></tr>
-<tr class="memdesc:af0eba2805fa72c8d69d8f73118b49431"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to the server and wait for a downlink but don't bother the user with downlink contents.  <a href="class_lo_ra_w_a_n_node.html#af0eba2805fa72c8d69d8f73118b49431">More...</a><br /></td></tr>
-<tr class="separator:af0eba2805fa72c8d69d8f73118b49431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85cf006ffd97ece3b2d2974b715540cb"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a85cf006ffd97ece3b2d2974b715540cb">sendReceive</a> (const char *strUp, uint8_t fPort, uint8_t *dataDown, size_t *lenDown, bool isConfirmed=false, <a class="el" href="struct_lo_ra_w_a_n_event__t.html">LoRaWANEvent_t</a> *eventUp=NULL, <a class="el" href="struct_lo_ra_w_a_n_event__t.html">LoRaWANEvent_t</a> *eventDown=NULL)</td></tr>
+<tr class="memdesc:a85cf006ffd97ece3b2d2974b715540cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to the server and wait for a downlink during Rx1 and/or Rx2 window.  <a href="class_lo_ra_w_a_n_node.html#a85cf006ffd97ece3b2d2974b715540cb">More...</a><br /></td></tr>
+<tr class="separator:a85cf006ffd97ece3b2d2974b715540cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ab107de181bde59c2731a5a64a1e2e"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a07ab107de181bde59c2731a5a64a1e2e">sendReceive</a> (uint8_t *dataUp, size_t lenUp, uint8_t fPort, uint8_t *dataDown, size_t *lenDown, bool isConfirmed=false, <a class="el" href="struct_lo_ra_w_a_n_event__t.html">LoRaWANEvent_t</a> *eventUp=NULL, <a class="el" href="struct_lo_ra_w_a_n_event__t.html">LoRaWANEvent_t</a> *eventDown=NULL)</td></tr>
+<tr class="memdesc:a07ab107de181bde59c2731a5a64a1e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to the server and wait for a downlink during Rx1 and/or Rx2 window.  <a href="class_lo_ra_w_a_n_node.html#a07ab107de181bde59c2731a5a64a1e2e">More...</a><br /></td></tr>
+<tr class="separator:a07ab107de181bde59c2731a5a64a1e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7123f9a907df9224b9b01282c12af459"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a7123f9a907df9224b9b01282c12af459">sendReceive</a> (uint8_t *dataUp, size_t lenUp, uint8_t fPort=1, bool isConfirmed=false, <a class="el" href="struct_lo_ra_w_a_n_event__t.html">LoRaWANEvent_t</a> *eventUp=NULL, <a class="el" href="struct_lo_ra_w_a_n_event__t.html">LoRaWANEvent_t</a> *eventDown=NULL)</td></tr>
+<tr class="memdesc:a7123f9a907df9224b9b01282c12af459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a message to the server and wait for a downlink but don't bother the user with downlink contents.  <a href="class_lo_ra_w_a_n_node.html#a7123f9a907df9224b9b01282c12af459">More...</a><br /></td></tr>
+<tr class="separator:a7123f9a907df9224b9b01282c12af459"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5449e301634dff1838a1b024b4067034"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a5449e301634dff1838a1b024b4067034">setDeviceStatus</a> (uint8_t battLevel)</td></tr>
 <tr class="memdesc:a5449e301634dff1838a1b024b4067034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set device status.  <a href="class_lo_ra_w_a_n_node.html#a5449e301634dff1838a1b024b4067034">More...</a><br /></td></tr>
 <tr class="separator:a5449e301634dff1838a1b024b4067034"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52ae7c2aa61262d7761236f289889020"><td class="memItemLeft" align="right" valign="top"><a id="a52ae7c2aa61262d7761236f289889020"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a52ae7c2aa61262d7761236f289889020">getFcntUp</a> ()</td></tr>
-<tr class="memdesc:a52ae7c2aa61262d7761236f289889020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last uplink's frame counter; also 0 if no uplink occured yet. <br /></td></tr>
-<tr class="separator:a52ae7c2aa61262d7761236f289889020"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ac61997732b3f6d5f33b6568e23be11"><td class="memItemLeft" align="right" valign="top"><a id="a8ac61997732b3f6d5f33b6568e23be11"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a8ac61997732b3f6d5f33b6568e23be11">getNFcntDown</a> ()</td></tr>
-<tr class="memdesc:a8ac61997732b3f6d5f33b6568e23be11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last network downlink's frame counter; also 0 if no network downlink occured yet. <br /></td></tr>
-<tr class="separator:a8ac61997732b3f6d5f33b6568e23be11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b647b639d1c7f1a2a81397b41c01dd8"><td class="memItemLeft" align="right" valign="top"><a id="a8b647b639d1c7f1a2a81397b41c01dd8"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a8b647b639d1c7f1a2a81397b41c01dd8">getAFcntDown</a> ()</td></tr>
-<tr class="memdesc:a8b647b639d1c7f1a2a81397b41c01dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last application downlink's frame counter; also 0 if no application downlink occured yet. <br /></td></tr>
-<tr class="separator:a8b647b639d1c7f1a2a81397b41c01dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5693065bbb6d1c6c45efbe010d86f417"><td class="memItemLeft" align="right" valign="top"><a id="a5693065bbb6d1c6c45efbe010d86f417"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a5693065bbb6d1c6c45efbe010d86f417">resetFcntDown</a> ()</td></tr>
-<tr class="memdesc:a5693065bbb6d1c6c45efbe010d86f417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the downlink frame counters (application and network) This is unsafe and can possibly allow replay attacks using downlinks. It mainly exists as part of the TS009 Specification Verification protocol. <br /></td></tr>
-<tr class="separator:a5693065bbb6d1c6c45efbe010d86f417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3217975ef9959ff83ce79dd80b0d777"><td class="memItemLeft" align="right" valign="top"><a id="ad3217975ef9959ff83ce79dd80b0d777"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#ad3217975ef9959ff83ce79dd80b0d777">getFCntUp</a> ()</td></tr>
+<tr class="memdesc:ad3217975ef9959ff83ce79dd80b0d777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last uplink's frame counter; also 0 if no uplink occured yet. <br /></td></tr>
+<tr class="separator:ad3217975ef9959ff83ce79dd80b0d777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7fabaa6efe9978c3674b1ab187446a1"><td class="memItemLeft" align="right" valign="top"><a id="aa7fabaa6efe9978c3674b1ab187446a1"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#aa7fabaa6efe9978c3674b1ab187446a1">getNFCntDown</a> ()</td></tr>
+<tr class="memdesc:aa7fabaa6efe9978c3674b1ab187446a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last network downlink's frame counter; also 0 if no network downlink occured yet. <br /></td></tr>
+<tr class="separator:aa7fabaa6efe9978c3674b1ab187446a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6785265f3311ff6bf296f82429c96701"><td class="memItemLeft" align="right" valign="top"><a id="a6785265f3311ff6bf296f82429c96701"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a6785265f3311ff6bf296f82429c96701">getAFCntDown</a> ()</td></tr>
+<tr class="memdesc:a6785265f3311ff6bf296f82429c96701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last application downlink's frame counter; also 0 if no application downlink occured yet. <br /></td></tr>
+<tr class="separator:a6785265f3311ff6bf296f82429c96701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4b3d07cd9bf4178d627204bae18b648"><td class="memItemLeft" align="right" valign="top"><a id="af4b3d07cd9bf4178d627204bae18b648"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#af4b3d07cd9bf4178d627204bae18b648">resetFCntDown</a> ()</td></tr>
+<tr class="memdesc:af4b3d07cd9bf4178d627204bae18b648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the downlink frame counters (application and network) This is unsafe and can possibly allow replay attacks using downlinks. It mainly exists as part of the TS009 Specification Verification protocol. <br /></td></tr>
+<tr class="separator:af4b3d07cd9bf4178d627204bae18b648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14e8a8a098df28ff5ee294f235500499"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a14e8a8a098df28ff5ee294f235500499">setDatarate</a> (uint8_t drUp)</td></tr>
 <tr class="memdesc:a14e8a8a098df28ff5ee294f235500499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set uplink datarate. This should not be used when ADR is enabled.  <a href="class_lo_ra_w_a_n_node.html#a14e8a8a098df28ff5ee294f235500499">More...</a><br /></td></tr>
 <tr class="separator:a14e8a8a098df28ff5ee294f235500499"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae222275f807f472083ea6100c23c75ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#ae222275f807f472083ea6100c23c75ff">setADR</a> (bool enable=true)</td></tr>
 <tr class="memdesc:ae222275f807f472083ea6100c23c75ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle ADR to on or off.  <a href="class_lo_ra_w_a_n_node.html#ae222275f807f472083ea6100c23c75ff">More...</a><br /></td></tr>
 <tr class="separator:ae222275f807f472083ea6100c23c75ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab16e85446e0a843001d1dabad5223956"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#ab16e85446e0a843001d1dabad5223956">setDutyCycle</a> (bool enable=true, uint32_t msPerHour=0)</td></tr>
-<tr class="memdesc:ab16e85446e0a843001d1dabad5223956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle adherence to dutyCycle limits to on or off.  <a href="class_lo_ra_w_a_n_node.html#ab16e85446e0a843001d1dabad5223956">More...</a><br /></td></tr>
-<tr class="separator:ab16e85446e0a843001d1dabad5223956"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a564386d9c15ad71a1a8703809c8a9741"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a564386d9c15ad71a1a8703809c8a9741">dutyCycleInterval</a> (uint32_t msPerHour, uint32_t airtime)</td></tr>
-<tr class="memdesc:a564386d9c15ad71a1a8703809c8a9741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the minimum interval to adhere to a certain dutyCycle. This interval is based on the ToA of one uplink and does not actually keep track of total airtime.  <a href="class_lo_ra_w_a_n_node.html#a564386d9c15ad71a1a8703809c8a9741">More...</a><br /></td></tr>
-<tr class="separator:a564386d9c15ad71a1a8703809c8a9741"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5571bebeebbece3a6357e1c9868cb8b"><td class="memItemLeft" align="right" valign="top"><a id="ac5571bebeebbece3a6357e1c9868cb8b"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#ac5571bebeebbece3a6357e1c9868cb8b">timeUntilUplink</a> ()</td></tr>
-<tr class="memdesc:ac5571bebeebbece3a6357e1c9868cb8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns time in milliseconds until next uplink is available under dutyCycle limits. <br /></td></tr>
-<tr class="separator:ac5571bebeebbece3a6357e1c9868cb8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40c5fdba815b26a44be7af68c184fe49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a40c5fdba815b26a44be7af68c184fe49">setDwellTime</a> (bool enable, uint32_t msPerUplink=0)</td></tr>
-<tr class="memdesc:a40c5fdba815b26a44be7af68c184fe49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle adherence to dwellTime limits to on or off.  <a href="class_lo_ra_w_a_n_node.html#a40c5fdba815b26a44be7af68c184fe49">More...</a><br /></td></tr>
-<tr class="separator:a40c5fdba815b26a44be7af68c184fe49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d4bbd6d382496838954ab4ac1168b77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a3d4bbd6d382496838954ab4ac1168b77">setDutyCycle</a> (bool enable=true, <a class="el" href="group__typedefs.html#ga210f31dd2bff7fb80563275648a5bbbd">RadioLibTime_t</a> msPerHour=0)</td></tr>
+<tr class="memdesc:a3d4bbd6d382496838954ab4ac1168b77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle adherence to dutyCycle limits to on or off.  <a href="class_lo_ra_w_a_n_node.html#a3d4bbd6d382496838954ab4ac1168b77">More...</a><br /></td></tr>
+<tr class="separator:a3d4bbd6d382496838954ab4ac1168b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bb50904544f331806fd744ab5b99efa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#ga210f31dd2bff7fb80563275648a5bbbd">RadioLibTime_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a5bb50904544f331806fd744ab5b99efa">dutyCycleInterval</a> (<a class="el" href="group__typedefs.html#ga210f31dd2bff7fb80563275648a5bbbd">RadioLibTime_t</a> msPerHour, <a class="el" href="group__typedefs.html#ga210f31dd2bff7fb80563275648a5bbbd">RadioLibTime_t</a> airtime)</td></tr>
+<tr class="memdesc:a5bb50904544f331806fd744ab5b99efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the minimum interval to adhere to a certain dutyCycle. This interval is based on the ToA of one uplink and does not actually keep track of total airtime.  <a href="class_lo_ra_w_a_n_node.html#a5bb50904544f331806fd744ab5b99efa">More...</a><br /></td></tr>
+<tr class="separator:a5bb50904544f331806fd744ab5b99efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e690c14858b46692e4ce9aa5a2566a"><td class="memItemLeft" align="right" valign="top"><a id="a49e690c14858b46692e4ce9aa5a2566a"></a>
+<a class="el" href="group__typedefs.html#ga210f31dd2bff7fb80563275648a5bbbd">RadioLibTime_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a49e690c14858b46692e4ce9aa5a2566a">timeUntilUplink</a> ()</td></tr>
+<tr class="memdesc:a49e690c14858b46692e4ce9aa5a2566a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns time in milliseconds until next uplink is available under dutyCycle limits. <br /></td></tr>
+<tr class="separator:a49e690c14858b46692e4ce9aa5a2566a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62bfe68f6fe63c2e408dccbff6a34a4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a62bfe68f6fe63c2e408dccbff6a34a4f">setDwellTime</a> (bool enable, <a class="el" href="group__typedefs.html#ga210f31dd2bff7fb80563275648a5bbbd">RadioLibTime_t</a> msPerUplink=0)</td></tr>
+<tr class="memdesc:a62bfe68f6fe63c2e408dccbff6a34a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle adherence to dwellTime limits to on or off.  <a href="class_lo_ra_w_a_n_node.html#a62bfe68f6fe63c2e408dccbff6a34a4f">More...</a><br /></td></tr>
+<tr class="separator:a62bfe68f6fe63c2e408dccbff6a34a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3044715beeff759ed47342d532ac3205"><td class="memItemLeft" align="right" valign="top"><a id="a3044715beeff759ed47342d532ac3205"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a3044715beeff759ed47342d532ac3205">maxPayloadDwellTime</a> ()</td></tr>
 <tr class="memdesc:a3044715beeff759ed47342d532ac3205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum payload given the currently present dwell time limits. WARNING: the addition of MAC commands may cause uplink errors; if you want to be sure that your payload fits within dwell time limits, subtract 16 from the result! <br /></td></tr>
@@ -202,9 +202,6 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="memitem:a9af613f7d923e7bdcfdbd020132c6d4b"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a9af613f7d923e7bdcfdbd020132c6d4b">setTxPower</a> (int8_t txPower)</td></tr>
 <tr class="memdesc:a9af613f7d923e7bdcfdbd020132c6d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure TX power of the radio module.  <a href="class_lo_ra_w_a_n_node.html#a9af613f7d923e7bdcfdbd020132c6d4b">More...</a><br /></td></tr>
 <tr class="separator:a9af613f7d923e7bdcfdbd020132c6d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfc9cdaa254a27c28403188c90991757"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#adfc9cdaa254a27c28403188c90991757">setCSMA</a> (uint8_t backoffMax, uint8_t difsSlots, bool enableCSMA=false)</td></tr>
-<tr class="memdesc:adfc9cdaa254a27c28403188c90991757"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures CSMA for LoRaWAN as per TR-13, LoRa Alliance.  <a href="class_lo_ra_w_a_n_node.html#adfc9cdaa254a27c28403188c90991757">More...</a><br /></td></tr>
-<tr class="separator:adfc9cdaa254a27c28403188c90991757"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf038f331c1dc954dafc2668e7a31ca0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#adf038f331c1dc954dafc2668e7a31ca0">getMacLinkCheckAns</a> (uint8_t *margin, uint8_t *gwCnt)</td></tr>
 <tr class="memdesc:adf038f331c1dc954dafc2668e7a31ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the quality of connectivity after requesting a LinkCheck MAC command. Returns 'true' if a network response was successfully parsed. Returns 'false' if there was no network response / parsing failed.  <a href="class_lo_ra_w_a_n_node.html#adf038f331c1dc954dafc2668e7a31ca0">More...</a><br /></td></tr>
 <tr class="separator:adf038f331c1dc954dafc2668e7a31ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,14 +211,19 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="memitem:aa97378ad7b669718fbef529649d03452"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#aa97378ad7b669718fbef529649d03452">getDevAddr</a> ()</td></tr>
 <tr class="memdesc:aa97378ad7b669718fbef529649d03452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the DevAddr of the device, regardless of OTAA or ABP mode.  <a href="class_lo_ra_w_a_n_node.html#aa97378ad7b669718fbef529649d03452">More...</a><br /></td></tr>
 <tr class="separator:aa97378ad7b669718fbef529649d03452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a683b02b63867bb7de5df45c94d190305"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#ga210f31dd2bff7fb80563275648a5bbbd">RadioLibTime_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#a683b02b63867bb7de5df45c94d190305">getLastToA</a> ()</td></tr>
+<tr class="memdesc:a683b02b63867bb7de5df45c94d190305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Time-on-air of the last uplink message.  <a href="class_lo_ra_w_a_n_node.html#a683b02b63867bb7de5df45c94d190305">More...</a><br /></td></tr>
+<tr class="separator:a683b02b63867bb7de5df45c94d190305"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:acd37dd26f6040754b4a9c942b3fb4339"><td class="memItemLeft" align="right" valign="top"><a id="acd37dd26f6040754b4a9c942b3fb4339"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 0</td></tr>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#acd37dd26f6040754b4a9c942b3fb4339">rx1DrOffset</a> = 0</td></tr>
+<tr class="memdesc:acd37dd26f6040754b4a9c942b3fb4339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset between TX and RX1 (such that RX1 has equal or lower DR) <br /></td></tr>
 <tr class="separator:acd37dd26f6040754b4a9c942b3fb4339"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae68e77ca38d22867798517d233c0fbc4"><td class="memItemLeft" align="right" valign="top"><a id="ae68e77ca38d22867798517d233c0fbc4"></a>
-<a class="el" href="struct_lo_ra_w_a_n_channel__t.html">LoRaWANChannel_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rx2</b></td></tr>
+<a class="el" href="struct_lo_ra_w_a_n_channel__t.html">LoRaWANChannel_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lo_ra_w_a_n_node.html#ae68e77ca38d22867798517d233c0fbc4">rx2</a></td></tr>
+<tr class="memdesc:ae68e77ca38d22867798517d233c0fbc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">RX2 channel properties - may be changed by MAC command. <br /></td></tr>
 <tr class="separator:ae68e77ca38d22867798517d233c0fbc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -272,53 +274,50 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a54c23c4676905aa17119d5a5dd5fa8a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54c23c4676905aa17119d5a5dd5fa8a8">&#9670;&nbsp;</a></span>beginABP()</h2>
+<a id="afb49f11ef6f7f826a72e76d7c48280c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb49f11ef6f7f826a72e76d7c48280c8">&#9670;&nbsp;</a></span>activateABP()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int16_t LoRaWANNode::beginABP </td>
+          <td class="memname">int16_t LoRaWANNode::activateABP </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>nwkSKey</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>appSKey</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>fNwkSIntKey</em> = <code>NULL</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>sNwkSIntKey</em> = <code>NULL</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>force</em> = <code>false</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>initialDr</em> = <code>RADIOLIB_LORAWAN_DATA_RATE_UNUSED</code>&#160;</td>
+          <td class="paramname"><em>initialDr</em> = <code>RADIOLIB_LW_DATA_RATE_UNUSED</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Join network by restoring ABP session or performing over-the-air activation. In this procedure, all necessary configuration must be provided by the user. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initialDr</td><td>The datarate at which to send the first uplink and any subsequent uplinks (unless ADR is enabled) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a28cd11360e9c3d8fdcdf91a0df1bf597"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28cd11360e9c3d8fdcdf91a0df1bf597">&#9670;&nbsp;</a></span>activateOTAA()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t LoRaWANNode::activateOTAA </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>initialDr</em> = <code>RADIOLIB_LW_DATA_RATE_UNUSED</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_lo_ra_w_a_n_join_event__t.html">LoRaWANJoinEvent_t</a> *&#160;</td>
+          <td class="paramname"><em>joinEvent</em> = <code>NULL</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -328,16 +327,10 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
       </table>
 </div><div class="memdoc">
 
-<p>Join network by performing activation by personalization. In this procedure, all necessary configuration must be provided by the user. </p>
+<p>Join network by restoring OTAA session or performing over-the-air activation. By this procedure, the device will perform an exchange with the network server and set all necessary configuration. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">addr</td><td>Device address. </td></tr>
-    <tr><td class="paramname">nwkSKey</td><td>Pointer to the network session AES-128 key (LoRaWAN 1.0) or MAC command network session key (LoRaWAN 1.1). </td></tr>
-    <tr><td class="paramname">appSKey</td><td>Pointer to the application session AES-128 key. </td></tr>
-    <tr><td class="paramname">fNwkSIntKey</td><td>Pointer to the Forwarding network session (LoRaWAN 1.1), unused for LoRaWAN 1.0. </td></tr>
-    <tr><td class="paramname">sNwkSIntKey</td><td>Pointer to the Serving network session (LoRaWAN 1.1), unused for LoRaWAN 1.0. </td></tr>
-    <tr><td class="paramname">force</td><td>Set to true to force a new session, even if one exists. </td></tr>
-    <tr><td class="paramname">initialDr</td><td>The datarate at which to send the first uplink and any subsequent uplinks (unless ADR is enabled) </td></tr>
+    <tr><td class="paramname">joinDr</td><td>The datarate at which to send the join-request and any subsequent uplinks (unless ADR is enabled) </td></tr>
   </table>
   </dd>
 </dl>
@@ -345,14 +338,72 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
 
 </div>
 </div>
-<a id="a27bbbb946a1676a084841d293499ea87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27bbbb946a1676a084841d293499ea87">&#9670;&nbsp;</a></span>beginOTAA()</h2>
+<a id="a92c59b540dee631e7bd8153479328611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92c59b540dee631e7bd8153479328611">&#9670;&nbsp;</a></span>beginABP()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int16_t LoRaWANNode::beginOTAA </td>
+          <td class="memname">void LoRaWANNode::beginABP </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>fNwkSIntKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>sNwkSIntKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>nwkSEncKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>appSKey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the device credentials and activation configuration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">addr</td><td>Device address. </td></tr>
+    <tr><td class="paramname">fNwkSIntKey</td><td>Pointer to the Forwarding network session (LoRaWAN 1.1), NULL for LoRaWAN 1.0. </td></tr>
+    <tr><td class="paramname">sNwkSIntKey</td><td>Pointer to the Serving network session (LoRaWAN 1.1), NULL for LoRaWAN 1.0. </td></tr>
+    <tr><td class="paramname">nwkSEncKey</td><td>Pointer to the MAC command network session key <a href="LoRaWAN 1.1">NwkSEncKey</a> or network session AES-128 key <a href="LoRaWAN 1.0">NwkSKey</a>. </td></tr>
+    <tr><td class="paramname">appSKey</td><td>Pointer to the application session AES-128 key. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2303cbbfc9c18e267c074284a4f1bf68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2303cbbfc9c18e267c074284a4f1bf68">&#9670;&nbsp;</a></span>beginOTAA()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LoRaWANNode::beginOTAA </td>
           <td>(</td>
           <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>joinEUI</em>, </td>
@@ -373,19 +424,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>appKey</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>force</em> = <code>false</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>joinDr</em> = <code>RADIOLIB_LORAWAN_DATA_RATE_UNUSED</code>&#160;</td>
+          <td class="paramname"><em>appKey</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -395,19 +434,16 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
       </table>
 </div><div class="memdoc">
 
-<p>Join network by performing over-the-air activation. By this procedure, the device will perform an exchange with the network server and set all necessary configuration. </p>
+<p>Set the device credentials and activation configuration. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">joinEUI</td><td>8-byte application identifier. </td></tr>
     <tr><td class="paramname">devEUI</td><td>8-byte device identifier. </td></tr>
     <tr><td class="paramname">nwkKey</td><td>Pointer to the network AES-128 key. </td></tr>
     <tr><td class="paramname">appKey</td><td>Pointer to the application AES-128 key. </td></tr>
-    <tr><td class="paramname">force</td><td>Set to true to force joining even if previously joined. </td></tr>
-    <tr><td class="paramname">joinDr</td><td>The datarate at which to send the join-request and any subsequent uplinks (unless ADR is enabled) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
 
 </div>
 </div>
@@ -430,7 +466,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
 <p>Wait for downlink, simplified to allow for simpler sendReceive. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>Pointer to a structure to store extra information about the event (port, frame counter, etc.). If set to NULL, no extra information will be passed to the user. </td></tr>
+    <tr><td class="paramname">event</td><td>Pointer to a structure to store extra information about the event (fPort, frame counter, etc.). If set to NULL, no extra information will be passed to the user. </td></tr>
   </table>
   </dd>
 </dl>
@@ -475,7 +511,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
   <table class="params">
     <tr><td class="paramname">data</td><td>Buffer to save received data into. </td></tr>
     <tr><td class="paramname">len</td><td>Pointer to variable that will be used to save the number of received bytes. </td></tr>
-    <tr><td class="paramname">event</td><td>Pointer to a structure to store extra information about the event (port, frame counter, etc.). If set to NULL, no extra information will be passed to the user. </td></tr>
+    <tr><td class="paramname">event</td><td>Pointer to a structure to store extra information about the event (fPort, frame counter, etc.). If set to NULL, no extra information will be passed to the user. </td></tr>
   </table>
   </dd>
 </dl>
@@ -483,22 +519,22 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
 
 </div>
 </div>
-<a id="a564386d9c15ad71a1a8703809c8a9741"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a564386d9c15ad71a1a8703809c8a9741">&#9670;&nbsp;</a></span>dutyCycleInterval()</h2>
+<a id="a5bb50904544f331806fd744ab5b99efa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bb50904544f331806fd744ab5b99efa">&#9670;&nbsp;</a></span>dutyCycleInterval()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t LoRaWANNode::dutyCycleInterval </td>
+          <td class="memname"><a class="el" href="group__typedefs.html#ga210f31dd2bff7fb80563275648a5bbbd">RadioLibTime_t</a> LoRaWANNode::dutyCycleInterval </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype"><a class="el" href="group__typedefs.html#ga210f31dd2bff7fb80563275648a5bbbd">RadioLibTime_t</a>&#160;</td>
           <td class="paramname"><em>msPerHour</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype"><a class="el" href="group__typedefs.html#ga210f31dd2bff7fb80563275648a5bbbd">RadioLibTime_t</a>&#160;</td>
           <td class="paramname"><em>airtime</em>&#160;</td>
         </tr>
         <tr>
@@ -537,7 +573,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
 </div><div class="memdoc">
 
 <p>Returns the pointer to the internal buffer that holds the LW base parameters. </p>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to uint8_t array of size RADIOLIB_LORAWAN_NONCES_BUF_SIZE </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to uint8_t array of size RADIOLIB_LW_NONCES_BUF_SIZE </dd></dl>
 
 </div>
 </div>
@@ -557,7 +593,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
 </div><div class="memdoc">
 
 <p>Returns the pointer to the internal buffer that holds the LW session parameters. </p>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to uint8_t array of size RADIOLIB_LORAWAN_SESSION_BUF_SIZE </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to uint8_t array of size RADIOLIB_LW_SESSION_BUF_SIZE </dd></dl>
 
 </div>
 </div>
@@ -578,6 +614,26 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
 
 <p>Returns the DevAddr of the device, regardless of OTAA or ABP mode. </p>
 <dl class="section return"><dt>Returns</dt><dd>8-byte DevAddr </dd></dl>
+
+</div>
+</div>
+<a id="a683b02b63867bb7de5df45c94d190305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a683b02b63867bb7de5df45c94d190305">&#9670;&nbsp;</a></span>getLastToA()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__typedefs.html#ga210f31dd2bff7fb80563275648a5bbbd">RadioLibTime_t</a> LoRaWANNode::getLastToA </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Time-on-air of the last uplink message. </p>
+<dl class="section return"><dt>Returns</dt><dd>(RadioLibTime_t) time-on-air (ToA) of last uplink message </dd></dl>
 
 </div>
 </div>
@@ -664,77 +720,14 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
 
 </div>
 </div>
-<a id="a6c0e89befd10c6977031669fd62f127b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c0e89befd10c6977031669fd62f127b">&#9670;&nbsp;</a></span>restore()</h2>
+<a id="adef05650cf4eb92042ca5e2688c1e164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adef05650cf4eb92042ca5e2688c1e164">&#9670;&nbsp;</a></span>sendMacCommandReq()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int16_t LoRaWANNode::restore </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>checkSum</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>lwMode</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>lwClass</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>freqPlan</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Restore session by loading information from persistent storage. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
-
-</div>
-</div>
-<a id="a7078a3f1657a2a022bb43f2bd34c93e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7078a3f1657a2a022bb43f2bd34c93e3">&#9670;&nbsp;</a></span>saveSession()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t LoRaWANNode::saveSession </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Save the current state of the session to the session buffer. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
-
-</div>
-</div>
-<a id="a6ff678f9cb57b97eb63886953aca1ba9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ff678f9cb57b97eb63886953aca1ba9">&#9670;&nbsp;</a></span>sendMacCommandReq()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool LoRaWANNode::sendMacCommandReq </td>
+          <td class="memname">int16_t LoRaWANNode::sendMacCommandReq </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>cid</em></td><td>)</td>
@@ -750,12 +743,12 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Whether or not the MAC command was added to the queue. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
 
 </div>
 </div>
-<a id="a158f65517fa910ef0cbcd92206dab284"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a158f65517fa910ef0cbcd92206dab284">&#9670;&nbsp;</a></span>sendReceive() <span class="overload">[1/3]</span></h2>
+<a id="a85cf006ffd97ece3b2d2974b715540cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85cf006ffd97ece3b2d2974b715540cb">&#9670;&nbsp;</a></span>sendReceive() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -770,7 +763,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
+          <td class="paramname"><em>fPort</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -814,12 +807,12 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">strUp</td><td>C-string that will be transmitted. </td></tr>
-    <tr><td class="paramname">port</td><td>Port number to send the message to. </td></tr>
+    <tr><td class="paramname">fPort</td><td>Port number to send the message to. </td></tr>
     <tr><td class="paramname">dataDown</td><td>Buffer to save received data into. </td></tr>
     <tr><td class="paramname">lenDown</td><td>Pointer to variable that will be used to save the number of received bytes. </td></tr>
     <tr><td class="paramname">isConfirmed</td><td>Whether to send a confirmed uplink or not. </td></tr>
-    <tr><td class="paramname">eventUp</td><td>Pointer to a structure to store extra information about the uplink event (port, frame counter, etc.). If set to NULL, no extra information will be passed to the user. </td></tr>
-    <tr><td class="paramname">eventDown</td><td>Pointer to a structure to store extra information about the downlink event (port, frame counter, etc.). If set to NULL, no extra information will be passed to the user. </td></tr>
+    <tr><td class="paramname">eventUp</td><td>Pointer to a structure to store extra information about the uplink event (fPort, frame counter, etc.). If set to NULL, no extra information will be passed to the user. </td></tr>
+    <tr><td class="paramname">eventDown</td><td>Pointer to a structure to store extra information about the downlink event (fPort, frame counter, etc.). If set to NULL, no extra information will be passed to the user. </td></tr>
   </table>
   </dd>
 </dl>
@@ -827,8 +820,8 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
 
 </div>
 </div>
-<a id="a7bd48e0ef0dfc6b05014e3a2f55cb51c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bd48e0ef0dfc6b05014e3a2f55cb51c">&#9670;&nbsp;</a></span>sendReceive() <span class="overload">[2/3]</span></h2>
+<a id="a07ab107de181bde59c2731a5a64a1e2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07ab107de181bde59c2731a5a64a1e2e">&#9670;&nbsp;</a></span>sendReceive() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -849,7 +842,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
+          <td class="paramname"><em>fPort</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -894,12 +887,12 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
   <table class="params">
     <tr><td class="paramname">dataUp</td><td>Data to send. </td></tr>
     <tr><td class="paramname">lenUp</td><td>Length of the data. </td></tr>
-    <tr><td class="paramname">port</td><td>Port number to send the message to. </td></tr>
+    <tr><td class="paramname">fPort</td><td>Port number to send the message to. </td></tr>
     <tr><td class="paramname">dataDown</td><td>Buffer to save received data into. </td></tr>
     <tr><td class="paramname">lenDown</td><td>Pointer to variable that will be used to save the number of received bytes. </td></tr>
     <tr><td class="paramname">isConfirmed</td><td>Whether to send a confirmed uplink or not. </td></tr>
-    <tr><td class="paramname">eventUp</td><td>Pointer to a structure to store extra information about the uplink event (port, frame counter, etc.). If set to NULL, no extra information will be passed to the user. </td></tr>
-    <tr><td class="paramname">eventDown</td><td>Pointer to a structure to store extra information about the downlink event (port, frame counter, etc.). If set to NULL, no extra information will be passed to the user. </td></tr>
+    <tr><td class="paramname">eventUp</td><td>Pointer to a structure to store extra information about the uplink event (fPort, frame counter, etc.). If set to NULL, no extra information will be passed to the user. </td></tr>
+    <tr><td class="paramname">eventDown</td><td>Pointer to a structure to store extra information about the downlink event (fPort, frame counter, etc.). If set to NULL, no extra information will be passed to the user. </td></tr>
   </table>
   </dd>
 </dl>
@@ -907,8 +900,8 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
 
 </div>
 </div>
-<a id="af0eba2805fa72c8d69d8f73118b49431"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0eba2805fa72c8d69d8f73118b49431">&#9670;&nbsp;</a></span>sendReceive() <span class="overload">[3/3]</span></h2>
+<a id="a7123f9a907df9224b9b01282c12af459"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7123f9a907df9224b9b01282c12af459">&#9670;&nbsp;</a></span>sendReceive() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -929,7 +922,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>port</em> = <code>1</code>, </td>
+          <td class="paramname"><em>fPort</em> = <code>1</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -962,10 +955,10 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
   <table class="params">
     <tr><td class="paramname">dataUp</td><td>Data to send. </td></tr>
     <tr><td class="paramname">lenUp</td><td>Length of the data. </td></tr>
-    <tr><td class="paramname">port</td><td>Port number to send the message to. </td></tr>
+    <tr><td class="paramname">fPort</td><td>Port number to send the message to. </td></tr>
     <tr><td class="paramname">isConfirmed</td><td>Whether to send a confirmed uplink or not. </td></tr>
-    <tr><td class="paramname">eventUp</td><td>Pointer to a structure to store extra information about the uplink event (port, frame counter, etc.). If set to NULL, no extra information will be passed to the user. </td></tr>
-    <tr><td class="paramname">eventDown</td><td>Pointer to a structure to store extra information about the downlink event (port, frame counter, etc.). If set to NULL, no extra information will be passed to the user. </td></tr>
+    <tr><td class="paramname">eventUp</td><td>Pointer to a structure to store extra information about the uplink event (fPort, frame counter, etc.). If set to NULL, no extra information will be passed to the user. </td></tr>
+    <tr><td class="paramname">eventDown</td><td>Pointer to a structure to store extra information about the downlink event (fPort, frame counter, etc.). If set to NULL, no extra information will be passed to the user. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1053,50 +1046,6 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
 
 </div>
 </div>
-<a id="adfc9cdaa254a27c28403188c90991757"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfc9cdaa254a27c28403188c90991757">&#9670;&nbsp;</a></span>setCSMA()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LoRaWANNode::setCSMA </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>backoffMax</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>difsSlots</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enableCSMA</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Configures CSMA for LoRaWAN as per TR-13, LoRa Alliance. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">backoffMax</td><td>Num of BO slots to be decremented after DIFS phase. 0 to disable BO. </td></tr>
-    <tr><td class="paramname">difsSlots</td><td>Num of CADs to estimate a clear CH. </td></tr>
-    <tr><td class="paramname">enableCSMA</td><td>enable/disable CSMA for LoRaWAN. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a14e8a8a098df28ff5ee294f235500499"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a14e8a8a098df28ff5ee294f235500499">&#9670;&nbsp;</a></span>setDatarate()</h2>
 
@@ -1116,7 +1065,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
 <p>Set uplink datarate. This should not be used when ADR is enabled. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dr</td><td>Datarate to use for uplinks. </td></tr>
+    <tr><td class="paramname">drUp</td><td>Datarate to use for uplinks. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1150,8 +1099,8 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
 
 </div>
 </div>
-<a id="ab16e85446e0a843001d1dabad5223956"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab16e85446e0a843001d1dabad5223956">&#9670;&nbsp;</a></span>setDutyCycle()</h2>
+<a id="a3d4bbd6d382496838954ab4ac1168b77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d4bbd6d382496838954ab4ac1168b77">&#9670;&nbsp;</a></span>setDutyCycle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1165,7 +1114,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype"><a class="el" href="group__typedefs.html#ga210f31dd2bff7fb80563275648a5bbbd">RadioLibTime_t</a>&#160;</td>
           <td class="paramname"><em>msPerHour</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -1187,8 +1136,8 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
 
 </div>
 </div>
-<a id="a40c5fdba815b26a44be7af68c184fe49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40c5fdba815b26a44be7af68c184fe49">&#9670;&nbsp;</a></span>setDwellTime()</h2>
+<a id="a62bfe68f6fe63c2e408dccbff6a34a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62bfe68f6fe63c2e408dccbff6a34a4f">&#9670;&nbsp;</a></span>setDwellTime()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1202,7 +1151,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype"><a class="el" href="group__typedefs.html#ga210f31dd2bff7fb80563275648a5bbbd">RadioLibTime_t</a>&#160;</td>
           <td class="paramname"><em>msPerUplink</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -1217,7 +1166,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">enable</td><td>Whether to adhere to dwellTime limits or not (default true). </td></tr>
-    <tr><td class="paramname">msPerHour</td><td>The maximum allowed Time-on-Air per uplink in milliseconds (default 0 = maximum allowed for configured band). </td></tr>
+    <tr><td class="paramname">msPerUplink</td><td>The maximum allowed Time-on-Air per uplink in milliseconds (default 0 = maximum allowed for configured band). </td></tr>
   </table>
   </dd>
 </dl>
@@ -1251,8 +1200,8 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
 
 </div>
 </div>
-<a id="a0e3c2642ebb6e86d6a739ea68d692e6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e3c2642ebb6e86d6a739ea68d692e6a">&#9670;&nbsp;</a></span>uplink() <span class="overload">[1/2]</span></h2>
+<a id="a1fa484970865e476311bf25969968fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fa484970865e476311bf25969968fff">&#9670;&nbsp;</a></span>uplink() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1267,7 +1216,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
+          <td class="paramname"><em>fPort</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1293,9 +1242,9 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">str</td><td>C-string that will be transmitted. </td></tr>
-    <tr><td class="paramname">port</td><td>Port number to send the message to. </td></tr>
+    <tr><td class="paramname">fPort</td><td>Port number to send the message to. </td></tr>
     <tr><td class="paramname">isConfirmed</td><td>Whether to send a confirmed uplink or not. </td></tr>
-    <tr><td class="paramname">event</td><td>Pointer to a structure to store extra information about the event (port, frame counter, etc.). If set to NULL, no extra information will be passed to the user. </td></tr>
+    <tr><td class="paramname">event</td><td>Pointer to a structure to store extra information about the event (fPort, frame counter, etc.). If set to NULL, no extra information will be passed to the user. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1303,8 +1252,8 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
 
 </div>
 </div>
-<a id="a1b919dc97479294a32b2d0c9dde49be8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b919dc97479294a32b2d0c9dde49be8">&#9670;&nbsp;</a></span>uplink() <span class="overload">[2/2]</span></h2>
+<a id="a66c170a6055e66915d3e94ce43a63e58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66c170a6055e66915d3e94ce43a63e58">&#9670;&nbsp;</a></span>uplink() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1325,7 +1274,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
+          <td class="paramname"><em>fPort</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1352,9 +1301,9 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>rx1DrOffset</b> = 
   <table class="params">
     <tr><td class="paramname">data</td><td>Data to send. </td></tr>
     <tr><td class="paramname">len</td><td>Length of the data. </td></tr>
-    <tr><td class="paramname">port</td><td>Port number to send the message to. </td></tr>
+    <tr><td class="paramname">fPort</td><td>Port number to send the message to. </td></tr>
     <tr><td class="paramname">isConfirmed</td><td>Whether to send a confirmed uplink or not. </td></tr>
-    <tr><td class="paramname">event</td><td>Pointer to a structure to store extra information about the event (port, frame counter, etc.). If set to NULL, no extra information will be passed to the user. </td></tr>
+    <tr><td class="paramname">event</td><td>Pointer to a structure to store extra information about the event (fPort, frame counter, etc.). If set to NULL, no extra information will be passed to the user. </td></tr>
   </table>
   </dd>
 </dl>

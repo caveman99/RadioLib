@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xtal_1008',['XTAL',['../class_s_x126x.html#ada0fe6c3d31885952b439135cf0c18f1',1,'SX126x']]]
+  ['user_1193',['user',['../struct_lo_ra_w_a_n_mac_spec__t.html#af817794fc458e31a575e8ab782bba584',1,'LoRaWANMacSpec_t']]]
 ];

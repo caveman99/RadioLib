@@ -1,11 +1,9 @@
 var searchData=
 [
-  ['payload_968',['payload',['../struct_lo_ra_w_a_n_mac_command__t.html#ac572044ad659ad7addd50d21f6f2e764',1,'LoRaWANMacCommand_t']]],
-  ['payloadlenmax_969',['payloadLenMax',['../struct_lo_ra_w_a_n_band__t.html#a9b8143ac9bbf3ed45e7cc80fc71ce055',1,'LoRaWANBand_t']]],
-  ['poly_970',['poly',['../class_radio_lib_c_r_c.html#af3942e08bde9d9d127f735bd10392f6d',1,'RadioLibCRC']]],
-  ['port_971',['port',['../struct_lo_ra_w_a_n_event__t.html#afde0d3bb9fce5dde27c0796d25a3aca3',1,'LoRaWANEvent_t']]],
-  ['power_972',['power',['../struct_lo_ra_w_a_n_event__t.html#a49eebe64d351bb2e91901ef8fae044ff',1,'LoRaWANEvent_t']]],
-  ['powermax_973',['powerMax',['../struct_lo_ra_w_a_n_band__t.html#a43fdafd540c93348f9b4a8958e021a4c',1,'LoRaWANBand_t']]],
-  ['powernumsteps_974',['powerNumSteps',['../struct_lo_ra_w_a_n_band__t.html#aa22d7d7670846b36d3104439d18e5f15',1,'LoRaWANBand_t']]],
-  ['protocolid_975',['protocolID',['../class_a_x25_frame.html#aa8895fea37220c82f68bd320331595c8',1,'AX25Frame']]]
+  ['newsession_1139',['newSession',['../struct_lo_ra_w_a_n_join_event__t.html#a5b233f8c9d2841b8db64df7f079ab0ee',1,'LoRaWANJoinEvent_t']]],
+  ['numchannels_1140',['numChannels',['../struct_lo_ra_w_a_n_channel_span__t.html#a50f5701ae19b79a0c8c487673135b2f2',1,'LoRaWANChannelSpan_t']]],
+  ['numcommands_1141',['numCommands',['../struct_lo_ra_w_a_n_mac_command_queue__t.html#ae83622d6039c73d6d7134318bb36edeb',1,'LoRaWANMacCommandQueue_t']]],
+  ['numrepeaters_1142',['numRepeaters',['../class_a_x25_frame.html#ad27453a838ba90f917a1a9853358bb9a',1,'AX25Frame']]],
+  ['numtones_1143',['numTones',['../struct_s_s_t_v_mode__t.html#ae3d67bbc9815c38bea17ec070c8c0096',1,'SSTVMode_t']]],
+  ['numtxspans_1144',['numTxSpans',['../struct_lo_ra_w_a_n_band__t.html#ae58f859a72e64aa4a6fe218ba7e21c10',1,'LoRaWANBand_t']]]
 ];
