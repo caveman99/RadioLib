@@ -1,8 +1,8 @@
 var class_lo_ra_w_a_n_node =
 [
     [ "LoRaWANNode", "class_lo_ra_w_a_n_node.html#aae05de563f765f14fe267e4d65844f76", null ],
-    [ "activateABP", "class_lo_ra_w_a_n_node.html#afb49f11ef6f7f826a72e76d7c48280c8", null ],
-    [ "activateOTAA", "class_lo_ra_w_a_n_node.html#a28cd11360e9c3d8fdcdf91a0df1bf597", null ],
+    [ "activateABP", "class_lo_ra_w_a_n_node.html#a77483c51548e48a5dff4b707f7770e86", null ],
+    [ "activateOTAA", "class_lo_ra_w_a_n_node.html#abd9e976eec64a3bd1ddf3331f2bc93cd", null ],
     [ "beginABP", "class_lo_ra_w_a_n_node.html#a92c59b540dee631e7bd8153479328611", null ],
     [ "beginOTAA", "class_lo_ra_w_a_n_node.html#a2303cbbfc9c18e267c074284a4f1bf68", null ],
     [ "clearSession", "class_lo_ra_w_a_n_node.html#a0feeaed200d8f94ad94c3ed49f404847", null ],
@@ -32,10 +32,10 @@ var class_lo_ra_w_a_n_node =
     [ "setDeviceStatus", "class_lo_ra_w_a_n_node.html#a5449e301634dff1838a1b024b4067034", null ],
     [ "setDutyCycle", "class_lo_ra_w_a_n_node.html#a3d4bbd6d382496838954ab4ac1168b77", null ],
     [ "setDwellTime", "class_lo_ra_w_a_n_node.html#a62bfe68f6fe63c2e408dccbff6a34a4f", null ],
+    [ "setRx2Dr", "class_lo_ra_w_a_n_node.html#addfd8ac3d0bfe5a273e9ba10e51f8025", null ],
     [ "setTxPower", "class_lo_ra_w_a_n_node.html#a9af613f7d923e7bdcfdbd020132c6d4b", null ],
     [ "timeUntilUplink", "class_lo_ra_w_a_n_node.html#a49e690c14858b46692e4ce9aa5a2566a", null ],
     [ "uplink", "class_lo_ra_w_a_n_node.html#a1fa484970865e476311bf25969968fff", null ],
     [ "uplink", "class_lo_ra_w_a_n_node.html#a66c170a6055e66915d3e94ce43a63e58", null ],
-    [ "rx1DrOffset", "class_lo_ra_w_a_n_node.html#acd37dd26f6040754b4a9c942b3fb4339", null ],
-    [ "rx2", "class_lo_ra_w_a_n_node.html#ae68e77ca38d22867798517d233c0fbc4", null ]
+    [ "TS009", "class_lo_ra_w_a_n_node.html#a8226f4d0329d15da9ffc706e5781403a", null ]
 ];
